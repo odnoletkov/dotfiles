@@ -1,0 +1,17 @@
+[user]
+	name = Maksim Odnoletkov
+	email = odnoletkov@mail.ru
+[color]
+	ui = auto
+[core]
+	editor = nano -Y patch
+	excludesfile = ~/.gitignore_global
+[alias]
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+	lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[diff "localizablestrings"]
+	textconv = "iconv -f utf-16 -t utf-8"
+[push]
+	default = simple
+[diff "plist"]
+	textconv = plutil -convert xml1 -o -

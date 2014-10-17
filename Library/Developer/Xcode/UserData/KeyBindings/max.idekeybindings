@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Menu Key Bindings</key>
+	<dict>
+		<key>Key Bindings</key>
+		<array>
+			<dict>
+				<key>Action</key>
+				<string>ReleaseGPUFrame:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.PauseContinue</string>
+				<key>CommandID</key>
+				<string>Xcode.GPUToolsKit.CmdDefinition.ReleaseGPUFrame</string>
+				<key>Group</key>
+				<string>Debug Menu for GPU Frame Debugger</string>
+				<key>GroupID</key>
+				<string>Xcode.GPUToolsKit.MenuDefinition.Debug</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string></string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Release GPU Frame</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>stepToPreviousDisplayableCall:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>Xcode.GPUToolsKit.CmdDefinition.StepPreviousDisplayableCall</string>
+				<key>Group</key>
+				<string>Debug Menu for GPU Frame Debugger</string>
+				<key>GroupID</key>
+				<string>Xcode.GPUToolsKit.MenuDefinition.Debug</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Step to Previous Draw/Dispatch Call</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>pauseOrContinue:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.PauseContinue</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.PauseContinue</string>
+				<key>Group</key>
+				<string>Debug Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string></string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Pause / Continue</string>
+			</dict>
+		</array>
+		<key>Version</key>
+		<integer>3</integer>
+	</dict>
+	<key>Text Key Bindings</key>
+	<dict>
+		<key>Key Bindings</key>
+		<dict>
+			<key></key>
+			<array>
+				<string>moveToRightEndOfLineAndModifySelection:</string>
+				<string>moveToLeftEndOfLineAndModifySelection:</string>
+				<string>moveToRightEndOfLine:</string>
+				<string>moveToLeftEndOfLine:</string>
+				<string>deleteToBeginningOfLine:</string>
+				<string>scrollToBeginningOfDocument:</string>
+				<string>scrollToEndOfDocument:</string>
+			</array>
+			<key>$@</key>
+			<string>moveToBeginningOfDocumentAndModifySelection:</string>
+			<key>$@</key>
+			<string>moveToEndOfDocumentAndModifySelection:</string>
+			<key>$@</key>
+			<string>moveWordBackwardAndModifySelection:</string>
+			<key>$@</key>
+			<string>moveWordForwardAndModifySelection:</string>
+			<key>$</key>
+			<string>moveToBeginningOfLineAndModifySelection:</string>
+			<key>$</key>
+			<string>moveToEndOfLineAndModifySelection:</string>
+			<key>@</key>
+			<string>moveWordBackward:</string>
+			<key>@</key>
+			<string>moveWordForward:</string>
+			<key>^</key>
+			<string>scrollPageUp:</string>
+			<key>^</key>
+			<string>scrollPageDown:</string>
+			<key></key>
+			<string>moveToBeginningOfLine:</string>
+			<key></key>
+			<string>moveToEndOfLine:</string>
+			<key></key>
+			<string>pageUp:</string>
+			<key></key>
+			<string>pageDown:</string>
+		</dict>
+		<key>Version</key>
+		<integer>3</integer>
+	</dict>
+</dict>
+</plist>
