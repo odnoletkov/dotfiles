@@ -13,8 +13,11 @@
 	resolveConflict = false
 	implicitIdentity = false
 	detachedHead = false
+[mailmap]
+    file = /Users/max/.scripts/.mailmap
 [alias]
-	lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(24)%ad %C(cyan dim)%<(17,trunc)%an%C(reset)%C(auto)%d %s' --date=local
+    lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(15)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=relative --since=1day
+    lga = log --pretty=format:'%C(yellow)%h %C(white dim)%>(24)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=local
 [diff "localizablestrings"]
 	textconv = "iconv -f utf-16 -t utf-8"
 [push]
