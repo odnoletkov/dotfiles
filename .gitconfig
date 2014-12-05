@@ -15,7 +15,6 @@
 	detachedHead = false
 [alias]
 	lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(24)%ad %C(cyan dim)%<(17,trunc)%an%C(reset)%C(auto)%d %s' --date=local
-	lgg = log --graph --pretty=format:'%C(yellow)%h %C(white dim)%>(24)%ad %C(cyan dim)%<(17,trunc)%an%C(reset)%C(auto)%d %s' --date=local
 [diff "localizablestrings"]
 	textconv = "iconv -f utf-16 -t utf-8"
 [push]
@@ -24,3 +23,6 @@
 	textconv = plutil -convert xml1 -o -
 [merge]
 	tool = opendiff
+[status]
+	short = true
+	branch = true
