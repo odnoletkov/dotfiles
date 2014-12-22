@@ -1,4 +1,4 @@
-___IMPORTHEADER_cocoaTouchSubclass___
+@import Foundation;
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_cocoaTouchSubclass___
 
