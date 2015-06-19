@@ -15,7 +15,7 @@
 [mailmap]
     file = /Users/max/.scripts/.mailmap
 [alias]
-    lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(15)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=relative --since=1day
+    lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(15)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=relative -10
     lga = log --pretty=format:'%C(yellow)%h %C(white dim)%>(24)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=local
 [diff "localizablestrings"]
 	textconv = "iconv -f utf-16 -t utf-8"
