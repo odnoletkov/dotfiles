@@ -70,11 +70,11 @@
 			</dict>
 			<dict>
 				<key>Action</key>
-				<string>showOrganizer:</string>
+				<string>windowMenu_showProducts:</string>
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>Xcode.IDEKit.CmdDefinition.Organizer</string>
+				<string>Xcode.IDEKit.CmdDefinition.Products</string>
 				<key>Group</key>
 				<string>Window Menu</string>
 				<key>GroupID</key>
