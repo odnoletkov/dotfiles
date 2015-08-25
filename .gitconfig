@@ -24,7 +24,11 @@
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
 [merge]
-	tool = opendiff
+	tool = opendiff_silent
+[mergetool "opendiff_silent"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" 2> /dev/null
+[difftool]
+	prompt = false
 [status]
 	short = true
 	branch = true
