@@ -2,10 +2,13 @@
 	name = Maksim Odnoletkov
 	email = odnoletkov@mail.ru
 [mailmap]
-    file = ~/.config/git/mailmap
-[alias]
-    lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(15)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=relative -10
-    lga = log --pretty=format:'%C(yellow)%h %C(white dim)%>(10)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=short
+	file = ~/.config/git/mailmap
+[log]
+	date = format:%H:%M %d.%m.%y
+[pretty]
+	line = format:%C(yellow)%h %C(white dim)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s
+[format]
+	pretty = line
 [diff "localizablestrings"]
 	textconv = "iconv -f utf-16 -t utf-8"
 [push]
