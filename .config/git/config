@@ -1,13 +1,6 @@
 [user]
 	name = Maksim Odnoletkov
 	email = odnoletkov@mail.ru
-[advice]
-	pushNonFastForward = false
-	statusHints = false
-	commitBeforeMerge = false
-	resolveConflict = false
-	implicitIdentity = false
-	detachedHead = false
 [mailmap]
     file = ~/.config/git/mailmap
 [alias]
