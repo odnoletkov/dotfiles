@@ -1,8 +1,6 @@
 [user]
 	name = Maksim Odnoletkov
 	email = odnoletkov@mail.ru
-[color]
-	ui = auto
 [advice]
 	pushNonFastForward = false
 	statusHints = false
