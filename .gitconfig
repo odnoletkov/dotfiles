@@ -11,7 +11,7 @@
 	implicitIdentity = false
 	detachedHead = false
 [mailmap]
-    file = /Users/max/.scripts/.mailmap
+    file = ~/.config/git/mailmap
 [alias]
     lg = log --pretty=format:'%C(yellow)%h %C(white dim)%>(15)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=relative -10
     lga = log --pretty=format:'%C(yellow)%h %C(white dim)%>(10)%ad %C(cyan dim)%<(2,trunc)%aN%C(reset)%C(auto)%d %s' --use-mailmap --date=short
