@@ -3,8 +3,6 @@
 	email = odnoletkov@mail.ru
 [color]
 	ui = auto
-[core]
-	excludesfile = ~/.scripts/.gitignore_global
 [advice]
 	pushNonFastForward = false
 	statusHints = false
