@@ -20,3 +20,5 @@
 	prompt = false
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
+[core]
+	editor = nano
