@@ -22,3 +22,5 @@
 	textconv = plutil -convert xml1 -o -
 [core]
 	editor = nano
+[merge]
+	tool = opendiff
