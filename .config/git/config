@@ -14,13 +14,13 @@
 [status]
 	short = true
 	branch = true
-[diff]
-	tool = opendiff
-[difftool]
-	prompt = false
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
 [core]
 	editor = nano
 [merge]
 	tool = opendiff
+[difftool]
+	prompt = false
+[mergetool]
+	keepBackup = false
