@@ -24,3 +24,5 @@
 	prompt = false
 [mergetool]
 	keepBackup = false
+[alias]
+	up = !git for-each-ref --sort=-committerdate --format=\"%(align:21)%(upstream:track)%(end)%(HEAD) %(refname:short)\" refs/heads | grep -v \"^ \"
