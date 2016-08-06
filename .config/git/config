@@ -18,6 +18,7 @@
 	textconv = plutil -convert xml1 -o -
 [core]
 	editor = nano
+	pager = less -S
 [merge]
 	tool = opendiff
 [difftool]
@@ -30,3 +31,6 @@
 	status = true
 [interactive]
 	singleKey = true
+[blame]
+	blankboundary = true
+	date = short
