@@ -26,7 +26,7 @@
 [mergetool]
 	keepBackup = false
 [alias]
-	up = !git for-each-ref --sort=-committerdate --format=\"%(align:21)%(upstream:track)%(end)%(HEAD) %(refname:short)\" refs/heads | grep -v \"^ \"
+	up = !git for-each-ref --sort=-committerdate --format=\"%(HEAD) %(refname:short) %(upstream:track)\" refs/heads | grep \"\\[.*\\]$\"
 [pager]
 	status = true
 [interactive]
