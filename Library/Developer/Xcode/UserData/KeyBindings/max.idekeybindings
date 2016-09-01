@@ -160,39 +160,10 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
-			<key></key>
-			<array>
-				<string>moveToEndOfTextAndModifySelection:</string>
-				<string>moveToBeginningOfTextAndModifySelection:</string>
-				<string>moveToEndOfText:</string>
-				<string>moveToBeginningOfText:</string>
-				<string>scrollToBeginningOfDocument:</string>
-				<string>scrollToEndOfDocument:</string>
-			</array>
-			<key>$@</key>
-			<string>moveToBeginningOfDocumentAndModifySelection:</string>
-			<key>$@</key>
-			<string>moveToEndOfDocumentAndModifySelection:</string>
-			<key>$@</key>
-			<string>moveWordBackwardAndModifySelection:</string>
-			<key>$@</key>
-			<string>moveWordForwardAndModifySelection:</string>
-			<key>$</key>
-			<string>moveToBeginningOfLineAndModifySelection:</string>
-			<key>$</key>
-			<string>moveToEndOfLineAndModifySelection:</string>
-			<key>@</key>
-			<string>moveWordBackward:</string>
-			<key>@</key>
-			<string>moveWordForward:</string>
-			<key>^</key>
+			<key>~</key>
 			<string>scrollPageUp:</string>
-			<key>^</key>
+			<key>~</key>
 			<string>scrollPageDown:</string>
-			<key></key>
-			<string>moveToBeginningOfLine:</string>
-			<key></key>
-			<string>moveToEndOfLine:</string>
 			<key></key>
 			<string>pageUp:</string>
 			<key></key>
