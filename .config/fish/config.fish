@@ -8,6 +8,7 @@ function fish_prompt
   echo -n '> '
 end
 
-set __fish_git_prompt_showdirtystate yes
-set __fish_git_prompt_showupstream informative
-alias fish_title __fish_git_prompt
+function fish_title
+  git symbolic-ref -q --short HEAD ^ /dev/null
+  or echo ""
+end
