@@ -1,0 +1,13 @@
+"*":
+  core:
+    disabledPackages: [
+      "exception-reporting"
+    ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    showInvisibles: true
+  welcome:
+    showOnStartup: false
