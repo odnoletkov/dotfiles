@@ -7,7 +7,6 @@
       "one-light-ui"
       "one-light-syntax"
     ]
-  editor:
-    showInvisibles: true
+  editor: {}
   welcome:
     showOnStartup: false
