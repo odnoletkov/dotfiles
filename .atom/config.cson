@@ -8,5 +8,9 @@
       "one-light-syntax"
     ]
   editor: {}
+  tabs:
+    enableVcsColoring: true
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
