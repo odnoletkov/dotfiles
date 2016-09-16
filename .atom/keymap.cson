@@ -1,2 +1,5 @@
 'atom-text-editor':
   'ctrl-i': 'editor:auto-indent'
+
+'.tree-view':
+  'space': 'tree-view:preview'
