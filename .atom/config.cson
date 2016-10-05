@@ -2,13 +2,16 @@
   core:
     disabledPackages: [
       "exception-reporting"
+      "background-tips"
     ]
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
-  editor: {}
+  editor:
+    showInvisibles: true
   tabs:
+    alwaysShowTabBar: false
     enableVcsColoring: true
   "tree-view":
     hideIgnoredNames: true
