@@ -1,4 +1,4 @@
-set -x PATH $PATH ~/bin
+set -x PATH $PATH ~/bin ~/.gem/ruby/2.0.0/bin/
 set -x CLICOLOR 1
 set -x GREP_OPTIONS --color=always
 
