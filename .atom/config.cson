@@ -4,6 +4,7 @@
       "exception-reporting"
       "background-tips"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-light-ui"
       "one-light-syntax"
