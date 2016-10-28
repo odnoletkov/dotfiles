@@ -33,3 +33,6 @@
 [blame]
 	blankboundary = true
 	date = short
+[color "diff"]
+	meta = magenta bold
+	func = cyan
