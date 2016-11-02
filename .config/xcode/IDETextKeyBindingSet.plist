@@ -65,6 +65,8 @@
         <string>deleteToEndOfParagraph:</string>
         <key>Delete to End of Text</key>
         <string>deleteToEndOfText:</string>
+        <key>Delete Current Line</key>
+        <string>selectLine:, delete:</string>
     </dict>
     <key>Find &amp; Replace</key>
     <dict>
@@ -116,6 +118,12 @@
         <string>insertTab:</string>
         <key>Insert Tab without Extra Action</key>
         <string>insertTabIgnoringFieldEditor:</string>
+        <key>Insert New Line Below</key>
+        <string>moveToEndOfLine:, insertNewline:</string>
+        <key>Insert New Line Above</key>
+        <string>moveUp:, moveToEndOfLine:, insertNewline:</string>
+        <key>Duplicate Current Line</key>
+        <string>selectLine:, copy:, moveToEndOfLine:, insertNewline:, paste:, deleteBackward:</string>
     </dict>
     <key>Mark &amp; Yank</key>
     <dict>
