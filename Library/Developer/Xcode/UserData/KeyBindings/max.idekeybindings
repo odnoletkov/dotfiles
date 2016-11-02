@@ -526,26 +526,6 @@
 			</dict>
 			<dict>
 				<key>Action</key>
-				<string>editorMenuTogglePlayPause:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandGroupID</key>
-				<string>Xcode.SpriteKit.CmdDefinition.TogglePauseSimulate</string>
-				<key>CommandID</key>
-				<string>Xcode.SpriteKit.CmdDefinition.TogglePauseSimulate</string>
-				<key>Group</key>
-				<string>Editor Menu for SpriteKit Editor</string>
-				<key>GroupID</key>
-				<string>Xcode.SpriteKit.MenuDefinition.Editor</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Title</key>
-				<string>Edit / Simulate</string>
-			</dict>
-			<dict>
-				<key>Action</key>
 				<string>ReleaseGPUFrame:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -634,6 +614,38 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key></key>
+			<array>
+				<array>
+					<string>insertNewlineIgnoringFieldEditor:</string>
+					<string>moveBackward:</string>
+				</array>
+			</array>
+			<key>^$D</key>
+			<array>
+				<string>selectLine:</string>
+				<string>copy:</string>
+				<string>moveToEndOfLine:</string>
+				<string>insertNewline:</string>
+				<string>paste:</string>
+				<string>deleteBackward:</string>
+			</array>
+			<key>^$K</key>
+			<array>
+				<string>selectLine:</string>
+				<string>delete:</string>
+			</array>
+			<key>^$O</key>
+			<array>
+				<string>moveUp:</string>
+				<string>moveToEndOfLine:</string>
+				<string>insertNewline:</string>
+			</array>
+			<key>^o</key>
+			<array>
+				<string>moveToEndOfLine:</string>
+				<string>insertNewline:</string>
+			</array>
 			<key>~$@</key>
 			<string>moveSubWordBackwardAndModifySelection:</string>
 			<key>~$@</key>
