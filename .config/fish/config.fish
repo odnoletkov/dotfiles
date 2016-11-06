@@ -5,7 +5,7 @@ set -x GREP_OPTIONS --color=always
 set -e fish_greeting
 
 function fish_prompt
-  echo -n '> '
+  echo -n '▶ '
 end
 
 function fish_title
