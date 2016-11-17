@@ -6,7 +6,7 @@
 [log]
 	date = format:%H:%M %d.%m.%y
 [pretty]
-	line = format:%C(yellow)%h %C(white dim)%ad %C(cyan dim)%aN%C(reset)%C(auto)%d %s
+	line = format:%C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
 [format]
 	pretty = line
 [push]
