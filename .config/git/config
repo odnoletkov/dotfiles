@@ -6,7 +6,7 @@
 [log]
 	date = format:%H:%M %d.%m.%y
 [pretty]
-	line = format:%C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
+	line = %C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
 [format]
 	pretty = line
 [push]
@@ -33,7 +33,8 @@
 	diffFilter = diff-highlight
 [blame]
 	blankboundary = true
-	date = short
+	date = format:%d.%m.%Y
 [color "diff"]
-	meta = magenta bold
-	func = cyan
+	meta = reverse bold
+	func = blue
+	frag = blue
