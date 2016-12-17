@@ -17,7 +17,7 @@
 [diff "plist"]
 	textconv = plutil -convert xml1 -o -
 [core]
-	pager = diff-so-fancy | less -S
+	pager = diff-highlight | less -S
 [merge]
 	tool = opendiff
 [difftool]
