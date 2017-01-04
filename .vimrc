@@ -4,7 +4,6 @@ syntax on
 set incsearch
 set hlsearch
 
-set autoindent
 set smartindent
 
 set tabstop=4
@@ -15,3 +14,4 @@ set fillchars=vert:\ ,fold:-
 set path+=**
 set wildmenu
 set scrolloff=4
+set nowrap
