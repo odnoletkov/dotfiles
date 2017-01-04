@@ -1,0 +1,9 @@
+set diff-highlight = yes
+set log-options = --pretty
+color cursor default white dim
+color status default default
+color title-focus white black bold
+color title-blur white black
+color id yellow default
+color date white default
+color author white default bold
