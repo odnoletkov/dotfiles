@@ -9,8 +9,6 @@
 	line = %C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
 [format]
 	pretty = line
-[push]
-	default = simple
 [status]
 	short = true
 	branch = true
