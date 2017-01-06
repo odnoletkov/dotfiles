@@ -15,3 +15,14 @@ set path+=**
 set wildmenu
 set scrolloff=4
 set nowrap
+set noswapfile
+
+noremap <Left> <nop>
+noremap <Right> <nop>
+noremap <Up> <nop>
+noremap <Down> <nop>
+
+noremap! <Left> <nop>
+noremap! <Right> <nop>
+noremap! <Up> <nop>
+noremap! <Down> <nop>
