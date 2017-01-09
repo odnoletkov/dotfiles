@@ -14,3 +14,8 @@ set fillchars=vert:\ ,fold:-
 set wildmenu
 set nowrap
 set noswapfile
+
+let g:solarized_termtrans=1
+let g:solarized_diffmode="high"
+colorscheme solarized
+hi MatchParen cterm=bold ctermfg=1 ctermbg=NONE
