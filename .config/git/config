@@ -36,5 +36,3 @@
 	meta = reverse bold
 	func = blue
 	frag = blue
-[diff]
-	mnemonicPrefix = true
