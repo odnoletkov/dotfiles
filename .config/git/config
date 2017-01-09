@@ -17,9 +17,10 @@
 [core]
 	pager = diff-highlight | less -S
 [merge]
-	tool = opendiff
+	tool = vimdiff
 [difftool]
 	prompt = false
+	trustExitCode = true
 [mergetool]
 	keepBackup = false
 [alias]
