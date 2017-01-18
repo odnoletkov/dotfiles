@@ -1,5 +1,8 @@
 export PATH=$PATH:~/bin:~/.gem/ruby/2.0.0/bin/
 
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+
 export PS1='\[\033]0;$(git symbolic-ref -q --short HEAD 2>/dev/null)\007\]$ '
 
 export CLICOLOR=1
