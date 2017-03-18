@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-path="/Applications/Xcode.app/Contents/Developer/Applications/Simulator/Contents/MacOS/Simulator"
+path="/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator"
+if [ ! -f $path ]; then
+	echo "wrong simulator path"
+	exit 1
+fi
+
 codesign -d "$path" 2> /dev/null
 
 if [ $? -eq 0 ]
