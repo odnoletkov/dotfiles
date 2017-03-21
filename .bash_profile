@@ -1,4 +1,4 @@
-export PATH=$PATH:~/bin:~/.gem/ruby/2.0.0/bin/
+export PATH=$PATH:~/bin:~/.fastlane/bin
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
