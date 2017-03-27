@@ -9,3 +9,5 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+
+alias crowdin='java -jar /usr/local/bin/crowdin-cli.jar'
