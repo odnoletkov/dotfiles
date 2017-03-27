@@ -12,3 +12,5 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+
+export VK_TOKEN=$(cat ~/Documents/Shared\ Playground\ Data/vk-access-token)
