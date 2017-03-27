@@ -12,5 +12,3 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
-
-alias crowdin='java -jar /usr/local/bin/crowdin-cli.jar'
