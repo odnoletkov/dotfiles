@@ -1,0 +1,8 @@
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+brew 'cloc'
+brew 'crowdin'
+brew 'oniguruma'
+brew 'jq'
+brew 'readline'
+brew 'tig'
