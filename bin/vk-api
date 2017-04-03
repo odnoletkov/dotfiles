@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eu
+
+method="${1:?undefined method name}"
+shift
+
+token=$(security find-generic-password -s api.vk.com -a 74141 -w)
+version=5.64
+
+curl \
+   --silent \
+   --show-error \
+   --fail \
+   -d v=$version \
+   -d access_token="$token" \
+   --url "https://api.vk.com/method/$method" \
+   "$@"
