@@ -6,3 +6,10 @@ def unique_percent:
 
 def vk_peer_id:
   (.chat_id // empty) + 2e9 // .user_id;
+
+def walk(f):
+  . as $in
+    | if type == "object" then map_values(walk(f)) | f
+    elif type == "array" then map(walk(f)) | f
+    else f
+    end;
