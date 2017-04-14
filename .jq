@@ -13,3 +13,13 @@ def walk(f):
     elif type == "array" then map(walk(f)) | f
     else f
     end;
+
+def xcodeproj(proj):
+  def run:
+  walk(
+      (proj.objects[select(strings and length == 24 and . != proj.rootObject)] | run) // .
+      );
+  proj.objects[select(. == proj.rootObject)] // . | run;
+
+def xcodeproj:
+  . as $root | .rootObject | xcodeproj($root);
