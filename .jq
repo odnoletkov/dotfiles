@@ -23,3 +23,10 @@ def xcodeproj(proj):
 
 def xcodeproj:
   . as $root | .rootObject | xcodeproj($root);
+
+def xcodetarget(target):
+  xcodeproj | .targets[] | select(.name == target) | walk(sort? // .);
+
+def peek3:
+  reduce path(.[]?[]?[]?) as $path
+    (.; setpath($path; getpath($path) | (arrays | []) // (objects | {}) // .));
