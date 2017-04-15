@@ -1,0 +1,3 @@
+#/bin/sh
+
+plutil -convert json -o - *.xcodeproj/project.pbxproj
