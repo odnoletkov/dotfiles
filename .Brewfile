@@ -1,6 +1,7 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
+brew 'bash-completion'
 brew 'cloc'
 brew 'colordiff'
 brew 'crowdin'
