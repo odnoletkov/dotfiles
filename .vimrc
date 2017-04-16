@@ -15,9 +15,7 @@ set wildmenu
 set nowrap
 set noswapfile
 
-let g:solarized_termtrans=1
-let g:solarized_diffmode="high"
-colorscheme solarized
-hi MatchParen cterm=bold ctermfg=1 ctermbg=NONE
+colorscheme flattened_light
+hi Normal ctermbg=NONE
 
 nnoremap <F5> :w<CR>:make!<CR>

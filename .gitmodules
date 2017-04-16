@@ -1,0 +1,6 @@
+[submodule ".vim/pack/max/start/flattened"]
+	path = .vim/pack/max/start/flattened
+	url = https://github.com/romainl/flattened.git
+[submodule ".vim/pack/max/start/jq.vim"]
+	path = .vim/pack/max/start/jq.vim
+	url = https://github.com/vito-c/jq.vim.git
