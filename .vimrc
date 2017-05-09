@@ -19,3 +19,6 @@ colorscheme flattened_light
 hi Normal ctermbg=NONE
 
 nnoremap <F5> :w<CR>:make!<CR>
+
+map <C-I> :pyf /usr/local/opt/clang-format/share/clang/clang-format.py<cr>
+imap <C-I> <c-o>:pyf /usr/local/opt/clang-format/share/clang/clang-format.py<cr>
