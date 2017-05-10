@@ -1,5 +1,7 @@
 set diff-highlight = yes
 set log-options = --pretty
+set mailmap = yes
+
 color cursor default white dim
 color status default default
 color title-focus white black bold
