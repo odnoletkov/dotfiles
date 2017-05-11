@@ -1,0 +1,10 @@
+#!/bin/bash
+set -eu
+
+git diff-index --quiet HEAD || (>&2 echo "error: dirty working tree or index"; exit 1)
+
+target=${1?"specify target ref"}
+base=$(git merge-base HEAD "$target")
+git reset --soft "$base" --
+
+git diff --cached --stat
