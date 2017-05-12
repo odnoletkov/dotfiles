@@ -21,8 +21,6 @@
 	trustExitCode = true
 [mergetool]
 	keepBackup = false
-[alias]
-	up = !git for-each-ref --sort=-committerdate --format=\"%(HEAD) %(refname:short) %(upstream:track)\" refs/heads | grep \"\\[.*\\]$\"
 [pager]
 	status = true
 [interactive]
