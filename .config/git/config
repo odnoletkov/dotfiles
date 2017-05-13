@@ -20,6 +20,7 @@
 	prompt = false
 	trustExitCode = true
 [mergetool]
+	prompt = false
 	keepBackup = false
 [pager]
 	status = true
