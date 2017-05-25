@@ -4,3 +4,6 @@
 [submodule ".vim/pack/max/start/xcconfig.vim"]
 	path = .vim/pack/max/start/xcconfig.vim
 	url = https://github.com/keith/xcconfig.vim.git
+[submodule ".vim/pack/max/start/vim-fugitive"]
+	path = .vim/pack/max/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive
