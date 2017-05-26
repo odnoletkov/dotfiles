@@ -6,7 +6,7 @@ set vertical-split = yes
 set blame-view-date = custom
 set blame-view-file-name = no
 
-color cursor default white dim
+color cursor white color8
 color status default default
 color title-focus white black bold
 color title-blur white black
