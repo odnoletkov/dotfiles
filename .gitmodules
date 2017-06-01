@@ -7,3 +7,6 @@
 [submodule ".vim/pack/max/start/vim-fugitive"]
 	path = .vim/pack/max/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive
+[submodule ".vim/pack/max/start/vim-unimpaired"]
+	path = .vim/pack/max/start/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired
