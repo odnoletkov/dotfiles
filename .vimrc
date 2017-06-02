@@ -15,6 +15,8 @@ set wildmenu
 set nowrap
 set noswapfile
 
+highlight DiffText cterm=none
+
 nnoremap <F5> :w<CR>:make!<CR>
 
 autocmd FileType c,cpp,objc map <C-I> :pyf /usr/local/opt/clang-format/share/clang/clang-format.py<cr>
