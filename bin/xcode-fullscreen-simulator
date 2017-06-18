@@ -1,20 +1,39 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-path="/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator"
-if [ ! -f $path ]; then
-	echo "wrong simulator path"
+# Enables full/split-screen window modes in the running Simulator.app instance
+# (original idea: https://twitter.com/stroughtonsmith/status/799664540996739073)
+#
+# Works by attaching with LLDB to the running Simulator.app instance and
+# adding -Primary, -Auxiliary and -AllowsTiling collectionBehavior's to existing windows.
+# Note that this is usually impossible due to SIP (System Integrity Protection). One
+# workaround is to remove code signature from the Simulator binary.
+#
+# 1. Make sure Simulator.app is running
+# 2. Run this
+#     - Follow instructions to work around SIP (once for each Xcode update)
+# 3. Notice 'Enter Full Screen' (the right one, green) button is now enabled on the Simulator window title bar
+# 4. Long-press it to enter tiling mode
+#     - Note that the usual way of setting up splits through Mission Control won't work for this window
+
+path=${1:-"/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator"}
+
+[ -f $path ] || {
+	>&2 echo "Invalid simulator path: $path"
 	exit 1
-fi
+}
 
-codesign -d "$path" 2> /dev/null
+codesign --display "$path" 2>/dev/null && {
 
-if [ $? -eq 0 ]
-then
-    echo "Simulator binary is code-signed. Trying to remove signature to disable SIP."
-    codesign --remove-signature "$path" || exit 1
-fi
+	>&2 cat <<-EOF
+	Simulator binary is code-signed. LLDB won't be able to attach due to System Integrity Protection.
+	Close Simulator and remove code signature with:
+	codesign --remove-signature "$path"
+	EOF
 
-lldb -n Simulator \
--o "expr ((NSWindow *)[(NSArray *)[[NSApplication sharedApplication] windows] setValue:@(1<<7|1<<8|1<<11) forKey:@\"collectionBehavior\"]);" \
--o "set set auto-confirm true" \
--o quit
+	exit 2
+}
+
+lldb \
+	--attach-name Simulator \
+	--batch \
+	--one-line "expr ((NSWindow *)[(NSArray *)[[NSApplication sharedApplication] windows] setValue:@(1<<7|1<<8|1<<11) forKey:@\"collectionBehavior\"]);"
