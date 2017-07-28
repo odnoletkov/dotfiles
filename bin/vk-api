@@ -6,7 +6,7 @@ method="${1:?undefined method name}"
 shift
 
 token=$(security find-generic-password -s api.vk.com -a 74141 -w)
-version=5.64
+version=5.65
 
 curl \
    --silent \
