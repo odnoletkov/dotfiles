@@ -10,3 +10,6 @@
 [submodule ".vim/pack/max/start/vim-unimpaired"]
 	path = .vim/pack/max/start/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired
+[submodule ".vim/pack/max/start/vim-swift"]
+	path = .vim/pack/max/start/vim-swift
+	url = git@github.com:odnoletkov/vim-swift
