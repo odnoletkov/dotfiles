@@ -15,7 +15,7 @@ set wildmenu
 set nowrap
 set noswapfile
 
-highlight DiffText cterm=none ctermbg=3
+colorscheme basic-light
 
 nnoremap <F5> :w<CR>:make!<CR>
 

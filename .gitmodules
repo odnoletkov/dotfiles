@@ -13,3 +13,6 @@
 [submodule ".vim/pack/max/start/vim-swift"]
 	path = .vim/pack/max/start/vim-swift
 	url = git@github.com:odnoletkov/vim-swift
+[submodule ".vim/pack/max/opt/vim-colors-basic"]
+	path = .vim/pack/max/opt/vim-colors-basic
+	url = git@github.com:odnoletkov/vim-colors-basic.git
