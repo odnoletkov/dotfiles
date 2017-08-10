@@ -14,6 +14,7 @@ set shiftwidth=4
 set wildmenu
 set nowrap
 set noswapfile
+set cursorline
 
 colorscheme basic-light
 
