@@ -19,3 +19,6 @@
 [submodule ".vim/pack/max/start/fugitive-gitlab.vim"]
 	path = .vim/pack/max/start/fugitive-gitlab.vim
 	url = https://github.com/shumphrey/fugitive-gitlab.vim.git
+[submodule ".vim/pack/max/start/vim-rhubarb"]
+	path = .vim/pack/max/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
