@@ -34,3 +34,6 @@
 [submodule ".vim/pack/max/start/vim-vinegar"]
 	path = .vim/pack/max/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule ".vim/pack/max/start/vim-surround"]
+	path = .vim/pack/max/start/vim-surround
+	url = https://github.com/tpope/vim-surround
