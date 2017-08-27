@@ -1,3 +1,3 @@
-set wrap
-set spell
-set nocursorline
+setlocal wrap
+setlocal spell
+setlocal nocursorline
