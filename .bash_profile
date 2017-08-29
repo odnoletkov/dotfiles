@@ -4,6 +4,7 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 
 export PROMPT_COMMAND='echo -ne "\033]0;$(git symbolic-ref -q --short HEAD 2>/dev/null)\007"'
+export PROMPT_COMMAND="update_terminal_cwd;$PROMPT_COMMAND"
 export PS1='$ '
 
 export CLICOLOR=1
