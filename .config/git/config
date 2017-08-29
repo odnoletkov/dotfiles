@@ -7,8 +7,6 @@
 	date = format:%H:%M %d.%m.%y
 [pretty]
 	line = %C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
-[format]
-	pretty = line
 [status]
 	short = true
 	branch = true
