@@ -1,8 +1,8 @@
 def unique_count:
   group_by(.) | map({(.[0] | tostring): length}) | add;
 
-def unique_percent:
-  unique_count | add as $sum | map_values(. / $sum);
+def ratio_values:
+  add as $sum | map_values(. / $sum);
 
 def vk_peer_id:
   (.chat_id // empty) + 2e9 // .user_id;
@@ -30,3 +30,15 @@ def xcodetarget(target):
 def peek3:
   reduce path(.[]?[]?[]?) as $path
     (.; setpath($path; getpath($path) | (arrays | []) // (objects | {}) // .));
+
+def semver_major:
+  split(".") | first;
+
+def group_by_key(f):
+  to_entries | group_by(.key | f) | map(from_entries);
+
+def count_by_key(f):
+  group_by_key(f) | map({ (to_entries[0].key | f): add}) | add;
+
+def to_csv:
+  to_entries | map([.key, .value] | @csv)[];
