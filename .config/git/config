@@ -1,6 +1,11 @@
 [user]
 	name = Maksim Odnoletkov
 	email = odnoletkov@mail.ru
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.mail.ru
+	smtpUser = odnoletkov@mail.ru
+	smtpServerPort = 587
 [mailmap]
 	file = ~/.config/git/mailmap
 [log]
