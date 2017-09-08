@@ -17,6 +17,7 @@
 [status]
 	short = true
 	branch = true
+	submoduleSummary = true
 [core]
 	pager = diff-highlight | less -S -+FX
 [merge]
@@ -37,3 +38,9 @@
 	meta = reverse bold
 	func = blue
 	frag = blue
+[diff]
+	submodule = log
+[fetch]
+	recurseSubmodules = on-demand
+[push]
+	recurseSubmodules = check
