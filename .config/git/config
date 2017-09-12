@@ -8,8 +8,6 @@
 	smtpServerPort = 587
 	suppresscc = all
 	confirm = always
-[mailmap]
-	file = ~/.config/git/mailmap
 [log]
 	date = format:%H:%M %d.%m.%y
 [pretty]

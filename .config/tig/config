@@ -1,5 +1,4 @@
 set diff-highlight = yes
-set mailmap = yes
 set vertical-split = yes
 set line-graphics = utf-8
 
