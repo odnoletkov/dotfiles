@@ -11,5 +11,3 @@ export EDITOR="$VISUAL"
 
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
 source /usr/local/etc/bash_completion
-
-security find-generic-password -s api.vk.com -a 74141 -w > ~/Documents/Shared\ Playground\ Data/vk-access-token
