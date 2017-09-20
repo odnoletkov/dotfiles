@@ -2,7 +2,6 @@ set diff-highlight = yes
 set vertical-split = yes
 set line-graphics = utf-8
 
-set blame-view-date = custom
 set blame-view-file-name = no
 
 color cursor white color8
