@@ -5,7 +5,9 @@ set -eu
 method="${1:?undefined method name}"
 shift
 
-token=$(security find-generic-password -s api.vk.com -a 74141 -w)
+user="${VK_USER:-74141}"
+
+token=$(security find-generic-password -s api.vk.com -a "$user" -w)
 version=5.65
 
 curl \
