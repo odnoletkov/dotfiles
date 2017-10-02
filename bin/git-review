@@ -7,4 +7,4 @@ target=${1?"specify target ref"}
 base=$(git merge-base HEAD "$target")
 git reset --soft "$base" --
 
-git diff --cached --stat
+git --no-pager diff --cached --stat
