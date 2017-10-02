@@ -8,8 +8,6 @@
 	smtpServerPort = 587
 	suppresscc = all
 	confirm = always
-[log]
-	date = format:%H:%M %d.%m.%y
 [pretty]
 	line = %C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
 [status]
@@ -31,7 +29,6 @@
 	diffFilter = diff-highlight
 [blame]
 	blankboundary = true
-	date = format:%d.%m.%Y
 [color "diff"]
 	meta = reverse bold
 	func = blue
