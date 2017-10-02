@@ -8,8 +8,6 @@
 	smtpServerPort = 587
 	suppresscc = all
 	confirm = always
-[pretty]
-	line = %C(yellow)%h %C(reset)%C(dim)%ad %C(bold)%aN%C(reset)%C(auto)%d %s
 [status]
 	short = true
 	branch = true
