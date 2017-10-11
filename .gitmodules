@@ -25,9 +25,6 @@
 [submodule ".vim/pack/max/start/vim-fubitive"]
 	path = .vim/pack/max/start/vim-fubitive
 	url = https://github.com/tommcdo/vim-fubitive
-[submodule ".vim/pack/max/start/gitv"]
-	path = .vim/pack/max/start/gitv
-	url = https://github.com/gregsexton/gitv
 [submodule ".vim/pack/max/start/vim-commentary"]
 	path = .vim/pack/max/start/vim-commentary
 	url = git@github.com:tpope/vim-commentary
