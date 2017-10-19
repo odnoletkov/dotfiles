@@ -34,3 +34,6 @@
 [submodule ".vim/pack/max/start/vim-surround"]
 	path = .vim/pack/max/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule ".vim/pack/max/start/vim-fireplace"]
+	path = .vim/pack/max/start/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace
