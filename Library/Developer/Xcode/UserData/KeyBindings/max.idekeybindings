@@ -224,10 +224,7 @@
 				<string>deleteBackward:</string>
 			</array>
 			<key>^$K</key>
-			<array>
-				<string>selectLine:</string>
-				<string>delete:</string>
-			</array>
+			<string>deleteLine:</string>
 			<key>^$O</key>
 			<array>
 				<string>moveUp:</string>

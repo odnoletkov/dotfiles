@@ -43,6 +43,8 @@
         <string>deleteExpressionBackward:</string>
         <key>Delete Expression Forward</key>
         <string>deleteExpressionForward:</string>
+        <key>Delete Line</key>
+        <string>deleteLine:</string>
         <key>Delete Paragraph</key>
         <string>deleteParagraph:</string>
         <key>Delete Word Backward</key>
@@ -65,8 +67,6 @@
         <string>deleteToEndOfParagraph:</string>
         <key>Delete to End of Text</key>
         <string>deleteToEndOfText:</string>
-        <key>Delete Current Line</key>
-        <string>selectLine:, delete:</string>
     </dict>
     <key>Find &amp; Replace</key>
     <dict>
