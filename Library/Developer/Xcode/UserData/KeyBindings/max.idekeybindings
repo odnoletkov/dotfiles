@@ -216,12 +216,12 @@
 			</array>
 			<key>^$D</key>
 			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
+				<string>moveToBeginningOfLine:</string>
+				<string>deleteToEndOfLine:</string>
+				<string>yank:</string>
 				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
+				<string>moveToBeginningOfLine:</string>
+				<string>yank:</string>
 			</array>
 			<key>^$K</key>
 			<string>deleteLine:</string>

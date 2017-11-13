@@ -123,7 +123,7 @@
         <key>Insert New Line Above</key>
         <string>moveUp:, moveToEndOfLine:, insertNewline:</string>
         <key>Duplicate Current Line</key>
-        <string>selectLine:, copy:, moveToEndOfLine:, insertNewline:, paste:, deleteBackward:</string>
+        <string>moveToBeginningOfLine:, deleteToEndOfLine:, yank:, insertNewline:, moveToBeginningOfLine:, yank:</string>
     </dict>
     <key>Mark &amp; Yank</key>
     <dict>
