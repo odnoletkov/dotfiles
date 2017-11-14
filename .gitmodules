@@ -34,3 +34,6 @@
 [submodule ".vim/pack/max/start/vim-fireplace"]
 	path = .vim/pack/max/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace
+[submodule ".vim/pack/max/start/vim-characterize"]
+	path = .vim/pack/max/start/vim-characterize
+	url = https://github.com/tpope/vim-characterize
