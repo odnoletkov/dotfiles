@@ -5,7 +5,6 @@ set incsearch
 set hlsearch
 
 set autoindent
-set smarttab
 
 set tabstop=4
 set softtabstop=4
