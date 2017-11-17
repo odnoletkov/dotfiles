@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu
+
+branch=${1?"specify target branch"}
+basename="$(basename $(pwd))"
+path="../$basename-review/$branch"
+
+rm -r "$path"
+git worktree prune
+git branch -d $branch
+git worktree list
