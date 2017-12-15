@@ -1,0 +1,2 @@
+# ~/.lldbinit
+command script import /usr/local/opt/chisel/libexec/fblldb.py
