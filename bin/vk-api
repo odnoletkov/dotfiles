@@ -8,7 +8,7 @@ shift
 user="${VK_USER:-74141}"
 
 token=$(security find-generic-password -s api.vk.com -a "$user" -w)
-version=5.65
+version=5.80
 
 curl \
    --silent \
