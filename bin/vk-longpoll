@@ -1,0 +1,37 @@
+#!/bin/bash
+set -eu
+
+lp_version=3
+
+server="$(vk-api messages.getLongPollServer -d lp_version="$lp_version" -d use_ssl=1 -d need_pts=1 | jq '.response')"
+
+>&2 echo "$server"
+
+url="https://$(echo $server | jq -r '.server')"
+key="$(<<< "$server" jq -r '.key')"
+ts="$(<<< "$server" jq -r '.ts')"
+pts="$(<<< "$server" jq -r '.pts')"
+
+let "mode = 2#11100010"
+
+while true
+do
+	result=$(
+	curl \
+		--silent \
+		--show-error \
+		--fail \
+		--get \
+		--url "$url" \
+		-d act=a_check \
+		-d key="$key" \
+		-d wait=20 \
+		-d mode="$mode" \
+		-d version="$lp_version" \
+		-d ts="$ts"
+	)
+	echo "$(<<< "$result" jq -r '.updates[]')"
+	ts="$(<<< "$result" jq -r '.ts')"
+	pts="$(<<< "$result" jq -r '.pts')"
+	>&2 echo "$ts/$pts"
+done
