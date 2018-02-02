@@ -33,7 +33,5 @@
 	frag = blue
 [diff]
 	submodule = log
-[fetch]
-	recurseSubmodules = on-demand
 [push]
-	recurseSubmodules = check
+	recurseSubmodules = on-demand
