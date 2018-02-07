@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>428</string>
+	<string>444.4</string>
 	<key>AMApplicationVersion</key>
-	<string>2.7</string>
+	<string>2.8</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -51,7 +51,8 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Xcode"	set CurrentDocument to document 1 whose name ends with (get name of front window)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		if not (exists window 1) then reopen		activate		tell application "System Events" to keystroke "t" using command down		do script "vim +" &amp; cstart &amp; "go " &amp; FilePath in window 1	end tellend tell</string>
+					<string>tell application "Xcode"	set CurrentDocument to document 1 whose name ends with (get name of front window)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "vim +" &amp; cstart &amp; "go " &amp; FilePath		activate
+	end tellend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,7 +106,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>657.000000:316.000000</string>
+				<string>657.000000:571.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
