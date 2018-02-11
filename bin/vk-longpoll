@@ -12,7 +12,7 @@ key="$(<<< "$server" jq -r '.key')"
 ts="$(<<< "$server" jq -r '.ts')"
 pts="$(<<< "$server" jq -r '.pts')"
 
-let "mode = 2#11100010"
+mode=$((2#11101010))
 
 while true
 do
