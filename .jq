@@ -42,3 +42,8 @@ def count_by_key(f):
 
 def to_csv:
   to_entries | map([.key, .value] | @csv)[];
+
+def intersection:
+  def i(y): ((unique + (y|unique)) | sort) as $sorted
+    | reduce range(1; $sorted|length) as $i ([]; if $sorted[$i] == $sorted[$i-1] then . + [$sorted[$i]] else . end);
+  reduce .[1:][] as $a (.[0]; i($a));
