@@ -33,5 +33,6 @@
 	frag = blue
 [diff]
 	submodule = log
+	colorMoved = default
 [push]
 	recurseSubmodules = on-demand
