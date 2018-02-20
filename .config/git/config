@@ -11,13 +11,11 @@
 [status]
 	short = true
 	branch = true
-	submoduleSummary = true
 [core]
 	pager = diff-highlight | less -S -+FX
 [merge]
 	tool = vimdiff
 [difftool]
-	prompt = false
 	trustExitCode = true
 [mergetool]
 	prompt = false
@@ -25,8 +23,6 @@
 [interactive]
 	singleKey = true
 	diffFilter = diff-highlight
-[blame]
-	blankboundary = true
 [color "diff"]
 	meta = reverse bold
 	func = blue
