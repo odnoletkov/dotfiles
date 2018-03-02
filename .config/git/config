@@ -29,6 +29,6 @@
 	frag = blue
 [diff]
 	submodule = log
-	colorMoved = default
+	colorMoved = dimmed_zebra
 [push]
 	recurseSubmodules = on-demand
