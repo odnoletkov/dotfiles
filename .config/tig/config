@@ -1,10 +1,8 @@
 set diff-highlight = yes
-set vertical-split = yes
 set line-graphics = utf-8
-
 set blame-view-file-name = no
 
-color cursor white color8
+color cursor white color9
 color status default default
 color title-focus white black bold
 color title-blur white black
