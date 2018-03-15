@@ -2,6 +2,7 @@ export PATH=$PATH:~/bin:~/.fastlane/bin
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
+shopt -s histappend
 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
