@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 
 # Show the size of files (or directories, or stdin) along with their sizes when
 # compressed with gzip and bz2. Everything is done in-memory, which means
