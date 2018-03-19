@@ -1,4 +1,4 @@
-export PATH=$PATH:~/bin:~/.fastlane/bin
+export PATH=~/bin:$PATH
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
