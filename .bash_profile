@@ -1,7 +1,7 @@
-export PATH=~/bin:$PATH
+PATH=~/bin:$PATH
 
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
+HISTCONTROL=erasedups
+HISTSIZE=10000
 shopt -s histappend
 
 export CLICOLOR=1
