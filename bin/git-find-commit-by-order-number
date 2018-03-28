@@ -7,7 +7,7 @@ initial=$(git rev-list --max-parents=0 $ref)
 
 {
 	git bisect start --no-checkout $ref $initial
-	git bisect run sh -c "[ \$(git rev-list --count BISECT_HEAD) -lt $target ] && exit 0 || exit 1"
+	git bisect run sh -c "[ \$(git rev-list --count BISECT_HEAD) -lt $target ]"
 } 1>&2
 
 result=$(git rev-parse bisect/bad)
