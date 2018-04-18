@@ -15,11 +15,10 @@ n=$(git rev-list --count $result)
 
 git bisect reset 1>&2
 
-if [[ "$n" -eq "$target" ]]
-then
+if [[ "$n" -eq "$target" ]]; then
 	echo "$result"
 	exit 0
 else
-	>&2 echo "Found $result which is ${n}th commit, doesn't match $target"
+	echo >&2 "Found $result which is ${n}th commit, doesn't match $target"
 	exit 1
 fi

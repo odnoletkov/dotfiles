@@ -11,10 +11,10 @@ token=$(security find-generic-password -s api.vk.com -a "$user" -w)
 version=5.80
 
 curl \
-   --silent \
-   --show-error \
-   --fail \
-   -d v=$version \
-   -d access_token="$token" \
-   --url "https://api.vk.com/method/$method" \
-   "$@"
+	--silent \
+	--show-error \
+	--fail \
+	-d v=$version \
+	-d access_token="$token" \
+	--url "https://api.vk.com/method/$method" \
+	"$@"

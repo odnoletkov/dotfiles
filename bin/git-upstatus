@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git for-each-ref --sort=-committerdate --format="%(HEAD) %(refname:short) %(upstream:track)" refs/heads \
-	| grep "\[.*\]$"
+git for-each-ref --sort=-committerdate --format="%(HEAD) %(refname:short) %(upstream:track)" refs/heads |
+	grep "\[.*\]$"
