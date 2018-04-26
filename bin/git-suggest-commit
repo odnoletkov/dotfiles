@@ -1,0 +1,36 @@
+#!/bin/bash
+
+options=$*
+
+# https://en.wikipedia.org/wiki/Normalized_compression_distance
+function ncd() {
+	local f1=$(cat $1)
+	local f2=$(cat $2)
+
+	local Z1=$(echo "$f1" | gzip | wc -c)
+	local Z2=$(echo "$f2" | gzip | wc -c)
+	local ZA=$( (
+		echo "$f1"
+		echo "$f2"
+	) | gzip | wc -c)
+
+	local ZMIN=$((Z1 < Z2 ? Z1 : Z2))
+	local ZMAX=$((Z1 > Z2 ? Z1 : Z2))
+	bc -l <<<"($ZA - $ZMIN)/$ZMAX"
+}
+
+function list_cached_files_commits() {
+	local files=$(git diff --cached --name-only)
+	git rev-list $options HEAD -- $files
+}
+
+function commit_similarity() {
+	ncd <(git diff --cached) <(git diff "$1"'^!')
+}
+
+list_cached_files_commits |
+	while read commit; do printf "%s\t%s\n" "$(commit_similarity $commit)" "$commit"; done |
+	# awk '$1 < .5' |
+	sort --numeric-sort --key=1 |
+	cut -f 2 |
+	cat
