@@ -10,4 +10,6 @@ set backspace=indent,eol
 
 colorscheme basic-light
 
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+
 let g:sleuth_neighbor_limit = 0

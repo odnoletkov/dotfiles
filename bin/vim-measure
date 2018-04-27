@@ -1,0 +1,2 @@
+#!/bin/bash
+vim >/dev/tty --startuptime >(grep "opening buffers") "+q" $*
