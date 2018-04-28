@@ -51,3 +51,7 @@ hi Structure      ctermfg=55
 hi Normal         ctermfg=16 ctermbg=231
 hi Whitespace     ctermfg=181
 hi Cursor         ctermbg=16
+
+hi diffAdded	  ctermbg=120
+hi diffRemoved	  ctermbg=210
+hi diffChanged    ctermbg=228
