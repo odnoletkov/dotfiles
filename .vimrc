@@ -8,7 +8,7 @@ set wildmenu
 set noswapfile
 set backspace=indent,eol
 
-colorscheme basic-light
+colorscheme basic
 
 nnoremap <silent> <C-L> :nohlsearch \| diffupdate<CR><C-L>
 
