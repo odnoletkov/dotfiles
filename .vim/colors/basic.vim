@@ -6,7 +6,7 @@ let colors_name = "basic"
 hi SpecialKey     ctermfg=25
 hi NonText        ctermfg=181
 hi Directory      ctermfg=25
-hi Search         ctermfg=16 ctermbg=192
+hi Search         ctermbg=192
 hi MoreMsg        ctermfg=34
 hi ModeMsg        ctermfg=34
 hi LineNr         ctermfg=243
