@@ -28,7 +28,7 @@ hi Pmenu          ctermfg=16 ctermbg=192
 hi PmenuSel       cterm=reverse ctermfg=16 ctermbg=192
 hi TabLine        cterm=reverse ctermfg=16 ctermbg=231
 hi CursorColumn   ctermbg=255
-hi CursorLine     ctermbg=255
+hi CursorLine     ctermbg=255 cterm=none
 hi ColorColumn    ctermbg=255
 hi MatchParen     ctermbg=192
 hi Comment        ctermfg=243
