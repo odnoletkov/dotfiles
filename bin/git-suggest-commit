@@ -21,7 +21,7 @@ function ncd() {
 
 function list_cached_files_commits() {
 	local files=$(git diff --cached --name-only)
-	git rev-list $options HEAD -- $files
+	git -C "$(git rev-parse --show-toplevel)" rev-list $options HEAD -- $files
 }
 
 function commit_similarity() {
