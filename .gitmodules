@@ -43,3 +43,6 @@
 [submodule ".vim/pack/max/start/vim-repeat"]
 	path = .vim/pack/max/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule ".vim/pack/max/start/vim-rsi"]
+	path = .vim/pack/max/start/vim-rsi
+	url = https://github.com/tpope/vim-rsi
