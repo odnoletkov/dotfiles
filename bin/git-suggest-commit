@@ -20,12 +20,12 @@ function ncd() {
 }
 
 function list_cached_files_commits() {
-	local files=$(git diff --cached --name-only)
+	local files=$(git diff-index --cached --name-only HEAD)
 	git -C "$(git rev-parse --show-toplevel)" rev-list $options HEAD -- $files
 }
 
 function commit_similarity() {
-	ncd <(git diff --cached) <(git diff "$1"'^!')
+	ncd <(git diff-index --patch-with-stat --cached HEAD) <(git diff-tree --patch-with-stat "$1"'^!')
 }
 
 list_cached_files_commits |
