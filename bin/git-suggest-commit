@@ -25,7 +25,7 @@ function list_cached_files_commits() {
 }
 
 function commit_similarity() {
-	ncd <(git diff-index --patch-with-stat --cached HEAD) <(git diff-tree --patch-with-stat --root "$1"'^!')
+	ncd <(git diff-index --patch-with-stat --cached HEAD) <(git diff-tree --patch-with-stat --root "$1")
 }
 
 list_cached_files_commits |
