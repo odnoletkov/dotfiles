@@ -5,16 +5,14 @@ function ncd() {
 	local f1=$(cat $1)
 	local f2=$(cat $2)
 
-	local Z1=$(echo "$f1" | gzip | wc -c)
-	local Z2=$(echo "$f2" | gzip | wc -c)
-	local ZA=$( (
+	local z1=$(echo "$f1" | gzip | wc -c)
+	local z2=$(echo "$f2" | gzip | wc -c)
+	local za=$( (
 		echo "$f1"
 		echo "$f2"
 	) | gzip | wc -c)
 
-	local ZMIN=$((Z1 < Z2 ? Z1 : Z2))
-	local ZMAX=$((Z1 > Z2 ? Z1 : Z2))
-	bc -l <<<"($ZA - $ZMIN)/$ZMAX"
+	echo $(( (za - (z1 < z2 ? z1 : z2))*100/(z1 > z2 ? z1 : z2) ))
 }
 
 function list_cached_files_commits() {
