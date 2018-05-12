@@ -9,8 +9,8 @@ hi CursorLine cterm=none
 hi CursorColumn ctermbg=195
 hi Folded ctermbg=none
 hi FoldColumn ctermbg=none
-hi Pmenu ctermfg=16 ctermbg=255
-hi PmenuSel cterm=reverse ctermfg=16 ctermbg=255
+hi Pmenu ctermfg=16 ctermbg=192
+hi PmenuSel cterm=reverse ctermfg=16 ctermbg=192
 
 hi Search ctermbg=192
 hi MatchParen ctermbg=192
