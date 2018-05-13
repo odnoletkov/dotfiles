@@ -25,7 +25,7 @@ function diff_command() {
 	if [[ -z $1 ]]; then
 		echo "git diff-index --cached HEAD"
 	else
-		echo "git diff-tree --no-commit-id --root $1"
+		echo "git diff-tree --no-commit-id --root -r $1"
 	fi
 }
 
