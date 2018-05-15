@@ -20,6 +20,8 @@
 [mergetool]
 	prompt = false
 	keepBackup = false
+[commit]
+	verbose = true
 [interactive]
 	singleKey = true
 	diffFilter = diff-highlight
