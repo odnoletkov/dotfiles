@@ -46,3 +46,6 @@
 [submodule ".vim/pack/max/start/vim-rsi"]
 	path = .vim/pack/max/start/vim-rsi
 	url = https://github.com/tpope/vim-rsi
+[submodule ".vim/pack/max/start/vim-scriptease"]
+	path = .vim/pack/max/start/vim-scriptease
+	url = git://github.com/tpope/vim-scriptease.git
