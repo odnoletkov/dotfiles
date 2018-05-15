@@ -9,6 +9,7 @@ set wildmenu
 set noswapfile
 set backspace=indent,eol
 set shellredir=>
+set autowrite
 
 nnoremap <silent> <C-L> :nohlsearch \| diffupdate<CR><C-L>
 
