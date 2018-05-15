@@ -1,5 +1,20 @@
 #!/bin/bash
 
+if [[ $(basename "$0") == "prepare-commit-msg" ]]; then
+	if [[ -z ${2+ } ]]; then
+		suggestion=$($(readlink "$0") | head -n 1)
+		score=$(cut <<<"$suggestion" -f 1)
+		commit=$(cut <<<"$suggestion" -f 2)
+		if (($score < 20)); then
+			tmp=$(mktemp)
+			git diff-tree --no-patch --format=%s "$commit" >"$tmp"
+			cat "$1" >>"$tmp"
+			mv "$tmp" "$1"
+		fi
+	fi
+	exit
+fi
+
 # https://en.wikipedia.org/wiki/Normalized_compression_distance
 function ncd() {
 	local f1=$(cat $1)
