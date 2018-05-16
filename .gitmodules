@@ -49,3 +49,6 @@
 [submodule ".vim/pack/max/start/vim-scriptease"]
 	path = .vim/pack/max/start/vim-scriptease
 	url = git://github.com/tpope/vim-scriptease.git
+[submodule ".jq/schema"]
+	path = .jq/schema
+	url = https://gist.github.com/a5abb4ebef3b0f72a6ed.git
