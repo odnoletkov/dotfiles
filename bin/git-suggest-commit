@@ -7,7 +7,7 @@ if [[ $(basename "$0") == "prepare-commit-msg" ]]; then
 		commit=$(cut <<<"$suggestion" -f 2)
 		if (($score < 20)); then
 			tmp=$(mktemp)
-			git diff-tree --no-patch --format=%s "$commit" >"$tmp"
+			git diff-tree -c --root --no-patch --format=%s "$commit" >"$tmp"
 			cat "$1" >>"$tmp"
 			mv "$tmp" "$1"
 		fi
