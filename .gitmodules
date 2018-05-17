@@ -52,3 +52,6 @@
 [submodule ".jq/schema"]
 	path = .jq/schema
 	url = https://gist.github.com/a5abb4ebef3b0f72a6ed.git
+[submodule ".vim/pack/max/start/vim-searchindex"]
+	path = .vim/pack/max/start/vim-searchindex
+	url = git://github.com/google/vim-searchindex.git
