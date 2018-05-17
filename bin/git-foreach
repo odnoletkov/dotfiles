@@ -1,4 +1,5 @@
 #!/bin/bash
+export GIT_PAGER=
 cmd="git $*"
 git submodule foreach "$cmd" ||
 	exit 1
