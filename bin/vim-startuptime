@@ -1,2 +1,2 @@
 #!/bin/bash
-vim >/dev/tty --startuptime >(cat) "+q" $*
+vim >/dev/tty --startuptime >(cat) "+q" "$@"

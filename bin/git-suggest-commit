@@ -2,10 +2,10 @@
 
 if [[ $(basename "$0") == "prepare-commit-msg" ]]; then
 	if [[ -z ${2+ } ]]; then
-		suggestion=$($(readlink "$0") | head -n 1)
+		suggestion=$("$(readlink "$0")" | head -n 1)
 		score=$(cut <<<"$suggestion" -f 1)
 		commit=$(cut <<<"$suggestion" -f 2)
-		if (($score < 20)); then
+		if (("$score" < 20)); then
 			tmp=$(mktemp)
 			git diff-tree -c --root --no-patch --format=%s "$commit" >"$tmp"
 			cat "$1" >>"$tmp"
@@ -17,8 +17,8 @@ fi
 
 # https://en.wikipedia.org/wiki/Normalized_compression_distance
 function ncd() {
-	local f1=$(cat $1)
-	local f2=$(cat $2)
+	local f1=$(cat "$1")
+	local f2=$(cat "$2")
 
 	local z1=$(echo "$f1" | gzip | wc -c)
 	local z2=$(echo "$f2" | gzip | wc -c)
@@ -32,8 +32,8 @@ function ncd() {
 
 function list_cached_files_commits() {
 	local dir=$(git rev-parse --show-toplevel)
-	local files=$($(diff_command $GIT_SUGGEST_TARGET) --name-only)
-	git -C "$dir" rev-list -10 $* HEAD -- $files
+	local files=$($(diff_command "$GIT_SUGGEST_TARGET") --name-only)
+	git -C "$dir" rev-list -10 "$@" HEAD -- "$files"
 }
 
 function diff_command() {
@@ -45,11 +45,11 @@ function diff_command() {
 }
 
 function commit_similarity() {
-	ncd <($(diff_command $1) --patch) <($(diff_command $2) --patch)
+	ncd <($(diff_command "$1") --patch) <($(diff_command "$2") --patch)
 }
 
-list_cached_files_commits $* |
-	while read commit; do printf "%s\t%s\n" "$(commit_similarity $commit $GIT_SUGGEST_TARGET)" "$commit"; done |
+list_cached_files_commits "$@" |
+	while read -r commit; do printf "%s\\t%s\\n" "$(commit_similarity "$commit" "$GIT_SUGGEST_TARGET")" "$commit"; done |
 	# awk '$1 < .3' |
 	sort --numeric-sort --key=1 |
 	# cut -f 2 |

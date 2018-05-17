@@ -3,15 +3,15 @@ set -e
 
 target=${1?"specify commit order number"}
 ref=${2-HEAD}
-initial=$(git rev-list --max-parents=0 $ref)
+initial=$(git rev-list --max-parents=0 "$ref")
 
 {
-	git bisect start --no-checkout $ref $initial
+	git bisect start --no-checkout "$ref" "$initial"
 	git bisect run sh -c "[ \$(git rev-list --count BISECT_HEAD) -lt $target ]"
 } 1>&2
 
 result=$(git rev-parse bisect/bad)
-n=$(git rev-list --count $result)
+n=$(git rev-list --count "$result")
 
 git bisect reset 1>&2
 

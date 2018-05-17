@@ -3,4 +3,4 @@ cmd="git $*"
 git submodule foreach "$cmd" ||
 	exit 1
 echo Entering superproject
-name= path="." sha1="$(git rev-parse HEAD)" toplevel="$(pwd)" bash -c "$cmd"
+path="." sha1="$(git rev-parse HEAD)" toplevel="$(pwd)" bash -c "$cmd"

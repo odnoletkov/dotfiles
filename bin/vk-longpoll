@@ -7,7 +7,7 @@ server="$(vk-api messages.getLongPollServer -d lp_version="$lp_version" -d use_s
 
 echo >&2 "$server"
 
-url="https://$(echo $server | jq -r '.server')"
+url="https://$(echo "$server" | jq -r '.server')"
 key="$(jq <<<"$server" -r '.key')"
 ts="$(jq <<<"$server" -r '.ts')"
 pts="$(jq <<<"$server" -r '.pts')"
@@ -29,7 +29,7 @@ while true; do
 			-d version="$lp_version" \
 			-d ts="$ts"
 	)
-	echo "$(jq <<<"$result" -r '.updates[]')"
+	jq <<<"$result" -r '.updates[]'
 	ts="$(jq <<<"$result" -r '.ts')"
 	pts="$(jq <<<"$result" -r '.pts')"
 	echo >&2 "$ts/$pts"

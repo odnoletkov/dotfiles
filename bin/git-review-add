@@ -3,7 +3,7 @@ set -eu
 
 remote="origin"
 branch=${1?"specify target branch"}
-basename="$(basename $(pwd))"
+basename="$(basename "$(pwd)")"
 path="../$basename-review/$branch"
 
 git worktree add "$path" -b "$branch" "$remote/$branch"

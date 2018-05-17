@@ -2,5 +2,5 @@
 
 for file in $(find . -path "*/*.lproj/*.strings"); do
 	echo -n "$file"
-	cat "$file" | sed -e 's/^".*" = "\(.*\)";$/\1/' -e 'tx' -e 'd' -e ':x' | tr -s "\\\n" "\n" | tr -s " " "\n" | wc -l
+	sed < "$file" -e 's/^".*" = "\(.*\)";$/\1/' -e 'tx' -e 'd' -e ':x' | tr -s "\\\\n" "\\n" | tr -s " " "\\n" | wc -l
 done
