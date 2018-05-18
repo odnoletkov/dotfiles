@@ -12,7 +12,7 @@
 	short = true
 	branch = true
 [core]
-	pager = diff-highlight | less -S -+FX
+	pager = diff-highlight | less -+FX
 [merge]
 	tool = vimdiff
 [difftool]
