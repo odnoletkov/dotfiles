@@ -55,3 +55,6 @@
 [submodule ".vim/pack/max/start/vim-searchindex"]
 	path = .vim/pack/max/start/vim-searchindex
 	url = git://github.com/google/vim-searchindex.git
+[submodule ".vim/pack/max/start/vim-github-link-opener"]
+	path = .vim/pack/max/start/vim-github-link-opener
+	url = git://github.com/gabebw/vim-github-link-opener.git
