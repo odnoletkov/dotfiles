@@ -13,5 +13,3 @@ set autowrite
 set grepprg=grep\ -rnsIH
 
 nnoremap <silent> <C-L> :nohlsearch \| diffupdate<CR><C-L>
-
-let g:sleuth_neighbor_limit = 0
