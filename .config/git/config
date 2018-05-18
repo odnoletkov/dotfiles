@@ -22,6 +22,8 @@
 	keepBackup = false
 [commit]
 	verbose = true
+[rebase]
+	missingCommitsCheck = warn
 [interactive]
 	singleKey = true
 	diffFilter = diff-highlight
