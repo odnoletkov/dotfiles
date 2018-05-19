@@ -5,7 +5,7 @@ colorscheme xcode
 set incsearch
 set hlsearch
 set autoindent
-set wildmenu
+set wildmode=list:longest,full
 set noswapfile
 set backspace=indent,eol
 set shellredir=>
