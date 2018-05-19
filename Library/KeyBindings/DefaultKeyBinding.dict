@@ -4,6 +4,14 @@
     "~<" = "moveToBeginningOfDocument:";
     "~>" = "moveToEndOfDocument:";
     "~v" = "pageUp:";
+    "^v" = "pageDown:";
     "~d" = "deleteWordForward:";
     "^w" = "deleteWordBackward:";
+
+    "~c" = ("capitalizeWord:", "moveForward:", "moveForward:");
+    "~u" = ("uppercaseWord:", "moveForward:", "moveForward:");
+    "~l" = ("lowercaseWord:", "moveForward:", "moveForward:");
+    "~t" = "transposeWords:";
+
+    "^_" = "undo:";
 }
