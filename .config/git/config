@@ -24,6 +24,7 @@
 	verbose = true
 [rebase]
 	missingCommitsCheck = warn
+	autoSquash = true
 [interactive]
 	singleKey = true
 	diffFilter = diff-highlight
