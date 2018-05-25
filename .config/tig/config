@@ -2,14 +2,6 @@ set diff-highlight = yes
 set line-graphics = utf-8
 set blame-view-file-name = no
 
-color cursor white color9
-color status default default
-color title-focus white black bold
-color title-blur white black
-color id yellow default
-color date color14 default dim
-color author color14 default dim bold
-
 bind generic 9 !+bash -c "echo -n %(commit) | tee >(pbcopy)"
 bind generic D !git difftool %(commit)^!
 bind generic <Space> !<echo %(commit)
