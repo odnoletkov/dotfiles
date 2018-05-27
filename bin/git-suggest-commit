@@ -33,7 +33,7 @@ function ncd() {
 function list_cached_files_commits() {
 	local dir=$(git rev-parse --show-toplevel)
 	local files=$($(diff_command "$GIT_SUGGEST_TARGET") --name-only)
-	git -C "$dir" rev-list -10 "$@" HEAD -- "$files"
+	git -C "$dir" rev-list -10 "$@" HEAD -- $files
 }
 
 function diff_command() {
