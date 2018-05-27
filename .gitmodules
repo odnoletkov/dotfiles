@@ -58,3 +58,6 @@
 [submodule ".vim/pack/max/start/vim-github-link-opener"]
 	path = .vim/pack/max/start/vim-github-link-opener
 	url = git://github.com/gabebw/vim-github-link-opener.git
+[submodule ".vim/pack/max/start/vim-dispatch"]
+	path = .vim/pack/max/start/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
