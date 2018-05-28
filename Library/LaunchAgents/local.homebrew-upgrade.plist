@@ -12,7 +12,7 @@
 	<array>
 		<string>bash</string>
 		<string>-c</string>
-		<string>/usr/local/bin/brew upgrade --cleanup | mail -s "Homebrew Upgrade" $USER</string>
+		<string>/usr/local/bin/brew upgrade --cleanup | mail -E -s "Homebrew Upgrade" $USER</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict>
