@@ -8,7 +8,7 @@ stty -ixon
 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-export LESS='--chop-long-lines --RAW-CONTROL-CHARS --jump-target=.2'
+export LESS='--chop-long-lines --RAW-CONTROL-CHARS --jump-target=4'
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
