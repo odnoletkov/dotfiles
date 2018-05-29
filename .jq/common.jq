@@ -4,9 +4,6 @@ def unique_count:
 def ratio_values:
   add as $sum | map_values(. / $sum);
 
-def vk_peer_id:
-  (.chat_id // empty) + 2e9 // .user_id;
-
 def walk(f):
   . as $in
     | if type == "object" then map_values(walk(f)) | f
@@ -26,22 +23,6 @@ def xcodeproj:
 
 def xcodetarget(target):
   xcodeproj | .targets[] | select(.name == target) | walk(sort? // .);
-
-def peek3:
-  reduce path(.[]?[]?[]?) as $path
-    (.; setpath($path; getpath($path) | (arrays | []) // (objects | {}) // .));
-
-def semver_major:
-  split(".") | first;
-
-def group_by_key(f):
-  to_entries | group_by(.key | f) | map(from_entries);
-
-def count_by_key(f):
-  group_by_key(f) | map({ (to_entries[0].key | f): add}) | add;
-
-def to_csv:
-  to_entries | map([.key, .value] | @csv)[];
 
 def intersection:
   def i(y): ((unique + (y|unique)) | sort) as $sorted
