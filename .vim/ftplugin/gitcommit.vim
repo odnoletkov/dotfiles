@@ -1,4 +1,5 @@
 setlocal spell
+setlocal iskeyword+=-
 setlocal omnifunc=CompleteSubject
 
 function! CompleteSubject(findstart,base) abort
