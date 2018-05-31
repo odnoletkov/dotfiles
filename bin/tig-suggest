@@ -1,2 +1,0 @@
-#!/bin/bash
-git suggest-commit "$@" | cut -f 2 | tig --no-walk=unsorted --stdin

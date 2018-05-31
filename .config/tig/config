@@ -4,5 +4,3 @@ set blame-view-file-name = no
 
 bind generic 9 !+bash -c "echo -n %(commit) | tee >(pbcopy)"
 bind generic D !git difftool %(commit)^!
-bind generic <Space> !<echo %(commit)
-bind generic <Ctrl-R> !git commit -C %(commit) --reset-author
