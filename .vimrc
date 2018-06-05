@@ -1,6 +1,6 @@
 filetype plugin indent on
 syntax on
-colorscheme xcode
+colorscheme grayscale
 
 set autoindent
 set autowrite
