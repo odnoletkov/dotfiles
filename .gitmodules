@@ -61,3 +61,6 @@
 [submodule ".vim/pack/max/start/vim-dispatch"]
 	path = .vim/pack/max/start/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule ".vim/pack/max/start/vim-diff-prune"]
+	path = .vim/pack/max/start/vim-diff-prune
+	url = https://sanctum.geek.nz/code/vim-diff-prune.git
