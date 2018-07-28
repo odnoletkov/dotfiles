@@ -1,5 +1,4 @@
 set diff-highlight = yes
-set line-graphics = utf-8
 set blame-view-file-name = no
 
 bind generic 9 !+bash -c "echo -n %(commit) | tee >(pbcopy)"
