@@ -16,4 +16,8 @@ uninstall:
 diff:
 	diff $(KEYBINDINGS_FILE) $(BACKUP_FILE) || :
 
-.PHONY: install backup uninstall diff
+defaults:
+	defaults write com.apple.dt.Xcode IDEIndexerActivityShowNumericProgress YES
+	defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
+.PHONY: install backup uninstall diff defaults
