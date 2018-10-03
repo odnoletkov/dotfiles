@@ -3,13 +3,13 @@
 	url = https://github.com/vito-c/jq.vim.git
 [submodule ".vim/pack/max/start/vim-fugitive"]
 	path = .vim/pack/max/start/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/pack/max/start/vim-unimpaired"]
 	path = .vim/pack/max/start/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
 [submodule ".vim/pack/max/start/vim-swift"]
 	path = .vim/pack/max/start/vim-swift
-	url = git@github.com:odnoletkov/vim-swift
+	url = https://github.com/odnoletkov/vim-swift
 [submodule ".vim/pack/max/start/fugitive-gitlab.vim"]
 	path = .vim/pack/max/start/fugitive-gitlab.vim
 	url = https://github.com/shumphrey/fugitive-gitlab.vim.git
@@ -21,7 +21,7 @@
 	url = https://github.com/tommcdo/vim-fubitive
 [submodule ".vim/pack/max/start/vim-commentary"]
 	path = .vim/pack/max/start/vim-commentary
-	url = git@github.com:tpope/vim-commentary
+	url = https://github.com/tpope/vim-commentary
 [submodule ".vim/pack/max/start/vim-vinegar"]
 	path = .vim/pack/max/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
@@ -48,19 +48,19 @@
 	url = https://github.com/tpope/vim-rsi
 [submodule ".vim/pack/max/start/vim-scriptease"]
 	path = .vim/pack/max/start/vim-scriptease
-	url = git://github.com/tpope/vim-scriptease.git
+	url = https://github.com/tpope/vim-scriptease.git
 [submodule ".jq/schema"]
 	path = .jq/schema
 	url = https://gist.github.com/a5abb4ebef3b0f72a6ed.git
 [submodule ".vim/pack/max/start/vim-searchindex"]
 	path = .vim/pack/max/start/vim-searchindex
-	url = git://github.com/google/vim-searchindex.git
+	url = https://github.com/google/vim-searchindex.git
 [submodule ".vim/pack/max/start/vim-github-link-opener"]
 	path = .vim/pack/max/start/vim-github-link-opener
-	url = git://github.com/gabebw/vim-github-link-opener.git
+	url = https://github.com/gabebw/vim-github-link-opener.git
 [submodule ".vim/pack/max/start/vim-dispatch"]
 	path = .vim/pack/max/start/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
+	url = https://github.com/tpope/vim-dispatch.git
 [submodule ".vim/pack/max/start/vim-diff-prune"]
 	path = .vim/pack/max/start/vim-diff-prune
 	url = https://sanctum.geek.nz/code/vim-diff-prune.git
