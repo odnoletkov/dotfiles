@@ -7,6 +7,7 @@ set autowrite
 set backspace=indent,eol
 set grepprg=grep\ -rnsIH
 set incsearch
+set laststatus=2
 set noswapfile
 set shellredir=>
 set wildmode=list:longest,full
