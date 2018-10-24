@@ -1,4 +1,5 @@
-XCODE_DIR = /Applications/Xcode.app
+XCODE_SELECT=$(shell xcode-select --print-path)
+XCODE_DIR=$(XCODE_SELECT:/Contents/Developer=)
 KEYBINDINGS_FILE = $(XCODE_DIR)/Contents/Frameworks/IDEKit.framework/Resources/IDETextKeyBindingSet.plist
 BACKUP_FILE = $(KEYBINDINGS_FILE).original
 
