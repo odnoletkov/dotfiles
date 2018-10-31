@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+target=$(tig-pick)
+
+if [[ -z $target ]]; then
+	exit 1
+fi
+
+if git merge-base --is-ancestor "$target" "@{upstream}"; then
+	echo >&2 "Warning: target commit $target is ancestor of the upstream"
+fi
+
+git commit --fixup "$target" "$@"
+
+git -c sequence.editor=: rebase --interactive --autosquash --autostash "$target"~
