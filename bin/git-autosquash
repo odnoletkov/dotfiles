@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+target=$(git merge-base --octopus $(git rev-list --grep '^\(fixup\|squash\)! ' HEAD))
+
+git -c sequence.editor=: rebase --interactive --autostash --autosquash "$target~"
