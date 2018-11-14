@@ -8,6 +8,9 @@
 	smtpServerPort = 587
 	suppresscc = all
 	confirm = always
+[status]
+	short = true
+	branch = true
 [core]
 	pager = diff-highlight | less
 [merge]
@@ -32,5 +35,3 @@
 	colorMoved = dimmed_zebra
 [push]
 	recurseSubmodules = on-demand
-[advice]
-	statusHints = false
