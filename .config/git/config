@@ -35,22 +35,3 @@
 	colorMoved = dimmed_zebra
 [push]
 	recurseSubmodules = on-demand
-[advice]
-	pushUpdateRejected = false
-	pushNonFFCurrent = false
-	pushNonFFMatching = false
-	pushAlreadyExists = false
-	pushFetchFirst = false
-	pushNeedsForce = false
-	statusHints = false
-	statusUoption = false
-	commitBeforeMerge = false
-	resolveConflict = false
-	implicitIdentity = false
-	detachedHead = false
-	checkoutAmbiguousRemoteBranchName = false
-	amWorkDir = false
-	rmHints = false
-	addEmbeddedRepo = false
-	ignoredHook = false
-	waitingForEditor = false
