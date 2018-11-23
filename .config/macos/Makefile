@@ -1,10 +1,3 @@
-Terminal.app:
-	/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.Terminal.plist \
-		-c 'Add :"Window Settings":current dict' \
-		-c 'Merge '$(HOME)/.config/Terminal.app/current.terminal' :"Window Settings":current' \
-		-c 'Set :"Default Window Settings" current' \
-		-c 'Set :"Startup Window Settings" current'
-
 defaults:
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	defaults write NSGlobalDomain InitialKeyRepeat -int 25
