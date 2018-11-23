@@ -29,18 +29,6 @@ defaults:
 	defaults write com.apple.dock orientation -string "left"
 	defaults write com.apple.dock show-process-indicators -bool true
 	defaults write com.apple.dock tilesize -int 128
-	defaults write com.apple.dt.Xcode ApplePersistenceIgnoreState -bool YES
-	defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
-	defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
-	defaults write com.apple.dt.Xcode DVTTextEditorWrapsLines -bool false
-	defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
-	defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool false
-	defaults write com.apple.dt.Xcode DVTTextShowPageGuide -bool true
-	defaults write com.apple.dt.Xcode IDEDisableStateRestoration -bool true
-	defaults write com.apple.dt.Xcode IDEIndexerActivityShowNumericProgress -bool true
-	defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
-	defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
-	defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string current.xccolortheme
 	defaults write com.apple.finder DisableAllAnimations -bool true
 	defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 	defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
