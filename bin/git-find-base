@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+args=${*:-HEAD}
+
+git log --grep '^\(fixup\|squash\)! ' --format="%s" $args \
+	| sed -E 's/^(fixup|squash)! //' \
+	| while read -r title; do git rev-list --grep="$title" --fixed-strings --max-count=2 $args; done \
+	| xargs git merge-base --octopus
