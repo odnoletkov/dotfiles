@@ -61,3 +61,6 @@
 [submodule ".vim/pack/max/start/vim-diff-prune"]
 	path = .vim/pack/max/start/vim-diff-prune
 	url = https://sanctum.geek.nz/code/vim-diff-prune.git
+[submodule ".vim/pack/max/start/vim-pbxproj"]
+	path = .vim/pack/max/start/vim-pbxproj
+	url = https://github.com/cfdrake/vim-pbxproj
