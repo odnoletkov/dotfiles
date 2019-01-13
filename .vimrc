@@ -5,6 +5,7 @@ colorscheme grayscale
 set autoindent
 set autowrite
 set backspace=indent,eol
+set confirm
 set grepprg=grep\ -rnsIH
 set history=200
 set incsearch
