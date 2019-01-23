@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+commit=${1-HEAD}
+
+git show --no-patch --format="%b" "$commit" | grep -oE 'http.?://\S+' | xargs open
