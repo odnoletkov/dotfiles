@@ -6,7 +6,7 @@ set autoindent
 set autowrite
 set backspace=indent,eol
 set confirm
-set grepprg=grep\ -rnsIH
+set grepprg=grep\ -nsIH
 set history=200
 set incsearch
 set laststatus=2
