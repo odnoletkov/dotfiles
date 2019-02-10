@@ -10,7 +10,7 @@ dotfiles: .git
 
 brew-upgrade:
 	brew update >/dev/null
-	brew upgrade --cleanup
+	brew upgrade
 
 submodule-update:
 	git submodule update --remote
