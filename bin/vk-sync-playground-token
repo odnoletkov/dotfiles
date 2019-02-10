@@ -1,4 +1,0 @@
-#!/bin/bash
-
-security find-generic-password -s api.vk.com -a 74141 -w \
-	>~/Documents/Shared\ Playground\ Data/vk-access-token
