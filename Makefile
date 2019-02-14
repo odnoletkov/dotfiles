@@ -14,6 +14,7 @@ brew-upgrade:
 
 submodule-update:
 	git submodule update --remote
+	vim -u NONE -c "helptags ALL" -c q
 
 submodule-review:
 	git submodule foreach 'tig --reverse $$sha1.. || :'
