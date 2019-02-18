@@ -18,6 +18,7 @@ hi MatchParen ctermbg=253
 hi Todo ctermfg=none ctermbg=none cterm=underline
 hi Directory ctermfg=16 cterm=bold
 hi Title ctermfg=16 cterm=bold
+hi Question ctermfg=16 cterm=bold
 
 hi DiffAdd ctermbg=120
 hi DiffChange ctermbg=228
