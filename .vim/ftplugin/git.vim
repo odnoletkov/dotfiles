@@ -1,3 +1,5 @@
 setlocal nowrap
 
-nnoremap <silent> <buffer> <LocalLeader>x /\v\S+:\/\/\S+<CR>
+if &filetype !=# 'gitrebase'
+  nnoremap <silent> <buffer> <LocalLeader>x /\v\S+:\/\/\S+<CR>
+endif
