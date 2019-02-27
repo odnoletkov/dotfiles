@@ -17,7 +17,7 @@ submodule-update:
 	vim -u NONE -c "helptags ALL" -c q
 
 submodule-review:
-	git submodule foreach 'tig --reverse $$sha1.. || :'
+	git submodule foreach 'tig --reverse $$sha1.. || :' 2>/dev/null
 
 submodule-ignore:
 	git submodule foreach 'git config --file ~/.gitmodules submodule.$$path.ignore all'
