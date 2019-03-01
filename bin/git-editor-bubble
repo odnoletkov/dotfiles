@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "/ ${1?missing message}\$/m\$\nwq\n" | ed "${2?missing file}"

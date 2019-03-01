@@ -1,0 +1,2 @@
+#!/bin/bash
+awk 'index($0, "'"${1?missing message}"'") { $1="drop" } { print }' "${2?missing file}"
