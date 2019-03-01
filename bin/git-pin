@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+if (( $# == 0 )); then
+	if [ -n "$(git config branch.$branch.pin-merge)" ]; then
+		git config branch.$branch.remote $(git config branch.$branch.pin-remote)
+		git config branch.$branch.merge $(git config branch.$branch.pin-merge)
+		git config --unset branch.$branch.pin-remote
+		git config --unset branch.$branch.pin-merge
+	fi
+	git branch -d pin
+else
+	if [ -z "$(git config branch.$branch.pin-merge)" ]; then
+		git config branch.$branch.pin-remote $(git config branch.$branch.remote)
+		git config branch.$branch.pin-merge $(git config branch.$branch.merge)
+	fi
+	git branch --force pin "${1}"
+	git branch --set-upstream-to=pin
+fi
+
+git status
