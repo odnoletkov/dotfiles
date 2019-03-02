@@ -1,4 +1,4 @@
-all: .git submodule-sync
+all: .git sync
 
 .git:
 	git init
@@ -24,7 +24,7 @@ submodule-ignore:
 
 message=Update submodules
 submodule-bubble:
-	git -c sequence.editor='printf "/ $(message)$$/m$$\nwq\n" | ed $$1' rebase --interactive --autostash $$(git rev-list --grep="^$(message)$$" -1 @)~
+	git -c sequence.editor='printf "/ $(message)$$/m$$\nwq\n" | ed' rebase --interactive --autostash $$(git rev-list --grep="^$(message)$$" -1 @)~
 
 submodule-commit:
 	git submodule status \
@@ -32,12 +32,14 @@ submodule-commit:
 		| xargs git commit --amend --no-edit --
 
 submodule-sync:
-	git diff-index --exit-code HEAD
-	$(MAKE) submodule-bubble
-	git reset --hard HEAD~
-	git pull --rebase --autostash
-	$(MAKE) submodule-bubble
-	$(MAKE) submodule-update
-	$(MAKE) submodule-review
-	$(MAKE) submodule-commit
+	make submodule-bubble
+	make submodule-update
+	make submodule-review
+	make submodule-commit
+
+sync:
+	git fetch
+	git reset @{upstream}
+	make submodule-sync
 	git push --force-with-lease
+	git status
