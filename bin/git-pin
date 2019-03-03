@@ -1,13 +1,27 @@
 #!/bin/bash
+
+# 			|git pin			|git pin $1
+# 
+# upstream is pin	|restore original upstream	|move pin to $1
+# 			|delete pin			|keep original upstream
+# 
+# upstream is not pin	|pin to fork-point from branch	|pin to $1
+# 			|set original upstream		|set original upstream
+
 set -e
 
 branch=$(git rev-parse --abbrev-ref HEAD)
+upstream=$(git rev-parse --abbrev-ref @{upstream})
+target=$1
 
-if (( $# == 0 )); then
-	git branch --set-upstream-to=$(git rev-parse --abbrev-ref --symbolic-full-name pin@{upstream})
+if [[ -z $target && $upstream != "pin" ]]; then
+	target=$(git merge-base head ${upstream-master})
+fi
+
+if [[ -z $target ]]; then
+	git branch --set-upstream-to=$(git rev-parse --abbrev-ref pin@{upstream})
 	git branch -d pin
 else
-	upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{upstream})
 	git branch --force pin $1
 	git branch --set-upstream-to=$upstream pin
 	git branch --set-upstream-to=pin
