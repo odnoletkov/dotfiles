@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+if ! git diff-index --exit-code --quiet HEAD; then
+	git stash push
+	trap 'git stash pop --index' EXIT
+fi
+
+git $@
