@@ -1,5 +1,3 @@
-include "common";
-
 def xcodeproj(proj):
   def run:
   walk(
