@@ -38,8 +38,7 @@ submodule-sync:
 	make submodule-commit
 
 sync:
-	git fetch
-	git reset @{upstream}
+	git pull --rebase
 	make submodule-sync
 	git push --force-with-lease
 	git status
