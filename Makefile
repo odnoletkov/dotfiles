@@ -41,4 +41,3 @@ sync:
 	git pull --rebase
 	make submodule-sync
 	git push --force-with-lease
-	git status
