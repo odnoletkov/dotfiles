@@ -1,0 +1,2 @@
+#!/bin/bash
+git rebase --interactive --autostash --autosquash $(git find-base ${1-"@{upstream}.."})~
