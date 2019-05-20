@@ -12,4 +12,5 @@ set incsearch
 set laststatus=2
 set noswapfile
 set shellredir=>
+set shortmess-=S
 set wildmode=list:longest,full
