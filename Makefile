@@ -39,5 +39,6 @@ submodule-sync:
 
 sync:
 	git pull --rebase
+	git submodule update --init
 	make submodule-sync
 	git push --force-with-lease
