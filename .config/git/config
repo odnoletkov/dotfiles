@@ -26,5 +26,9 @@
 [diff]
 	submodule = log
 	colorMoved = dimmed_zebra
+[submodule]
+	recurse = true
+[fetch]
+	recurseSubmodules = on-demand
 [push]
 	recurseSubmodules = on-demand
