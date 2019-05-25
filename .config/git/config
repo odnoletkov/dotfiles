@@ -32,3 +32,8 @@
 	recurseSubmodules = on-demand
 [push]
 	recurseSubmodules = on-demand
+[mergetool "mergepbx"]
+	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+	trustExitCode = true
+[merge "mergepbx"]
+	driver = mergepbx %O %A %B
