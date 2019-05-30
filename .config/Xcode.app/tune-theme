@@ -1,0 +1,49 @@
+#!/bin/bash
+set -e
+
+file=${1?missing theme file path}
+font=SFMono
+size=14
+
+function font() {
+	/usr/libexec/PlistBuddy -c "Set $1 $2 - $3.0" "$file"
+}
+
+font DVTConsoleDebuggerPromptTextFont $font-Medium $((size - 3))
+font DVTConsoleDebuggerInputTextFont $font-Medium $((size - 3))
+font DVTConsoleDebuggerOutputTextFont $font-Light $((size - 3))
+font DVTConsoleExectuableInputTextFont $font-Light $((size - 3))
+font DVTConsoleExectuableOutputTextFont $font-Medium $((size - 3))
+
+font DVTMarkupTextStrongFont .SFNSText-Bold $((size - 4))
+font DVTMarkupTextLinkFont .SFNSText $((size - 4))
+font DVTMarkupTextSecondaryHeadingFont .SFNSText $((size + 4))
+font DVTMarkupTextNormalFont .SFNSText $((size - 4))
+font DVTMarkupTextOtherHeadingFont .SFNSText $((size + 0))
+font DVTMarkupTextEmphasisFont .SFNSText-Italic $((size - 4))
+font DVTMarkupTextCodeFont SFMono-Regular $((size - 4))
+font DVTMarkupTextPrimaryHeadingFont .SFNSDisplay $((size + 10))
+
+font DVTSourceTextSyntaxFonts:xcode.syntax.plain $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.attribute $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.comment.doc $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.comment.doc.keyword $font-Medium $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.comment $font-LightItalic $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.number $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.variable $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.url $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.type.system $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.macro.system $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.type $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.function.system $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.class $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.constant.system $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.function $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.preprocessor $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.keyword $font-Medium $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.constant $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.macro $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.string $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.class.system $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.character $font-Light $size
+font DVTSourceTextSyntaxFonts:xcode.syntax.identifier.variable.system $font-Light $size
