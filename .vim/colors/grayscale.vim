@@ -20,10 +20,10 @@ hi Directory ctermfg=16 cterm=bold
 hi Title ctermfg=16 cterm=bold
 hi Question ctermfg=16 cterm=bold
 
-hi DiffAdd ctermbg=120
-hi DiffChange ctermbg=228
-hi DiffDelete ctermfg=210 ctermbg=210
-hi DiffText cterm=reverse ctermfg=105 ctermbg=231
+hi DiffAdd ctermbg=193
+hi DiffChange ctermbg=230
+hi DiffDelete ctermfg=224 ctermbg=224
+hi DiffText ctermfg=0 ctermbg=222 cterm=none
 hi diffAdded ctermbg=120
 hi diffRemoved ctermbg=210
 hi diffChanged ctermbg=228
