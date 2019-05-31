@@ -40,6 +40,6 @@ hi Constant ctermfg=238
 hi Number ctermfg=238
 hi String ctermfg=238
 hi Comment ctermfg=248
-hi NonText ctermfg=252
+hi NonText ctermfg=4
 hi Visual ctermbg=254
 hi CursorLine ctermbg=255
