@@ -12,7 +12,7 @@ hi FoldColumn ctermbg=none
 hi Pmenu ctermfg=16 ctermbg=255
 hi PmenuSel cterm=reverse ctermfg=16 ctermbg=255
 
-hi Search ctermbg=253
+hi Search ctermbg=195
 hi MatchParen ctermbg=253
 
 hi Todo ctermfg=none ctermbg=none cterm=underline
