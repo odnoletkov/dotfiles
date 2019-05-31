@@ -13,4 +13,5 @@ set laststatus=2
 set noswapfile
 set shellredir=>
 set shortmess-=S
+set showbreak=+
 set wildmode=list:longest,full
