@@ -7,7 +7,7 @@ hi VertSplit ctermbg=16
 hi WildMenu ctermfg=16 ctermbg=231 cterm=bold
 hi CursorLine cterm=none
 hi CursorColumn ctermbg=255
-hi Folded ctermfg=248 ctermbg=none
+hi Folded ctermfg=4 ctermbg=none
 hi FoldColumn ctermbg=none
 hi Pmenu ctermfg=16 ctermbg=255
 hi PmenuSel cterm=reverse ctermfg=16 ctermbg=255
