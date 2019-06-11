@@ -12,5 +12,3 @@ export GREP_OPTIONS=--color=auto
 export EDITOR=vim
 
 source /usr/local/etc/bash_completion
-
-alias git='LC_ALL=C git'
