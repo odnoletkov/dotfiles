@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
 
-args=${*:-HEAD}
+range=${*:-"@{upstream}.."}
 
-git log --grep '^\(fixup\|squash\)! ' --format="%s" $args \
+git log --grep '^\(fixup\|squash\)! ' --format="%s" $range \
 	| sed -E 's/^(fixup|squash)! //' \
 	| while read -r title; do
 		git rev-parse --verify --quiet "$title^{commit}" \
-			|| git rev-list --grep="$title" --fixed-strings --max-count=2 $args
+			|| git rev-list --grep="$title" --fixed-strings --max-count=2 $range
 		done \
 	| xargs git merge-base --octopus
