@@ -20,7 +20,7 @@ fi
 
 if [[ -z $target ]]; then
 	git branch --set-upstream-to=$(git rev-parse --abbrev-ref pin@{upstream})
-	git branch -d pin
+	git branch --delete --force pin
 else
 	git branch --force pin $1
 	git branch --set-upstream-to=$upstream pin
