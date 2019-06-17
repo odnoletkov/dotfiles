@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
-base=$(git find-base ${1-"@{upstream}.."})
+base=$(git find-base ${1-"@{upstream}"})
 [ -z $base ] && exit 1
 git rebase --interactive --autostash --autosquash $base~
