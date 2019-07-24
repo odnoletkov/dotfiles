@@ -17,4 +17,6 @@ set shortmess-=S
 set showbreak=+
 set wildmode=list:longest,full
 
+cabbrev url \v\S+:\/\/\S+
+
 nnoremap <silent> <C-L> :nohlsearch \| diffupdate<CR><C-L>
