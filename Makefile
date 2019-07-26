@@ -8,13 +8,11 @@ all: .git sync
 	git checkout master
 	git submodule update --init
 
-message = Update submodules
-
 sync:
 	git pull --rebase
 	git submodule update --init
-	git -c sequence.editor='printf "/ $(message)$$/m$$\nwq\n" | ed' \
-		rebase --interactive $$(git rev-list --grep="^$(message)$$" -1 @)~
+	git -c sequence.editor='printf %s\\n 1m$$ wq | ed' \
+		rebase --interactive $$(git rev-list --grep="^Update submodules$$" -1 @)~
 	git submodule update --remote
 	vim -u NONE -c "helptags ALL" -c q
 	git submodule foreach 'tig --reverse $$sha1.. || :' 2>/dev/null
