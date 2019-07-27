@@ -16,7 +16,5 @@ sync:
 	git submodule update --remote
 	vim -u NONE -c "helptags ALL" -c q
 	git submodule foreach 'tig --reverse $$sha1.. || :' 2>/dev/null
-	git submodule status \
-		| sed -En 's/\+.{40} (.*) \(.*\)/\1/p' \
-		| xargs git commit --amend --no-edit --
+	git commit --amend --no-edit --all
 	git push --force-with-lease
