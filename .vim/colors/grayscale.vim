@@ -28,6 +28,10 @@ hi diffAdded ctermbg=120
 hi diffRemoved ctermbg=210
 hi diffChanged ctermbg=228
 
+hi GitGutterAdd ctermfg=4
+hi GitGutterChange ctermfg=4
+hi GitGutterDelete ctermfg=4
+
 hi Statement ctermfg=16 cterm=bold
 hi Type ctermfg=238 cterm=bold
 hi Function ctermfg=16
