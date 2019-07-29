@@ -1,9 +1,5 @@
 set diff-highlight = yes
 
-color cursor white color9
-color title-focus white black bold
-color title-blur white black
-
 bind generic 9 !+bash -c "echo -n %(commit) | tee >(pbcopy)"
 bind generic D !git difftool %(commit)^!
 bind generic x @git open-url %(commit)
