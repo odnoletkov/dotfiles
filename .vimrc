@@ -15,7 +15,6 @@ set noswapfile
 set shellredir=>
 set shortmess-=S
 set showbreak=+
-set updatetime=100
 set wildmode=list:longest,full
 
 cabbrev url \v\S+:\/\/\S+
