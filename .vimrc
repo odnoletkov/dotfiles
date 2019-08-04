@@ -3,6 +3,7 @@ syntax on
 colorscheme grayscale
 
 set autoindent
+set autoread
 set autowrite
 set backspace=indent,eol
 set confirm
