@@ -32,17 +32,17 @@ if &background == "light"
   hi diffRemoved ctermbg=210
   hi diffChanged ctermbg=228
 
-  hi Statement ctermfg=16
-  hi Type ctermfg=16 cterm=bold
-  hi Function ctermfg=16
-  hi Identifier ctermfg=16 cterm=bold
-  hi Normal ctermfg=16
-  hi Special ctermfg=16
-  hi PreCondit ctermfg=238
-  hi PreProc ctermfg=238
-  hi Constant ctermfg=238
-  hi Number ctermfg=238
-  hi String ctermfg=238
+  hi Statement ctermfg=none
+  hi Type ctermfg=none
+  hi Function ctermfg=none
+  hi Identifier ctermfg=none
+  hi Normal ctermfg=none
+  hi Special ctermfg=none
+  hi PreCondit ctermfg=none
+  hi PreProc ctermfg=none
+  hi Constant ctermfg=none
+  hi Number ctermfg=none
+  hi String ctermfg=none
   hi Comment ctermfg=238 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=254
@@ -77,17 +77,17 @@ else
   hi diffRemoved ctermbg=210
   hi diffChanged ctermbg=228
 
-  hi Statement ctermfg=231
-  hi Type ctermfg=231 cterm=bold
-  hi Function ctermfg=231
-  hi Identifier ctermfg=231 cterm=bold
-  hi Normal ctermfg=231
-  hi Special ctermfg=231
-  hi PreCondit ctermfg=249
-  hi PreProc ctermfg=249
-  hi Constant ctermfg=249
-  hi Number ctermfg=249
-  hi String ctermfg=249
+  hi Statement ctermfg=none
+  hi Type ctermfg=none
+  hi Function ctermfg=none
+  hi Identifier ctermfg=none
+  hi Normal ctermfg=none
+  hi Special ctermfg=none
+  hi PreCondit ctermfg=none
+  hi PreProc ctermfg=none
+  hi Constant ctermfg=none
+  hi Number ctermfg=none
+  hi String ctermfg=none
   hi Comment ctermfg=239 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=233
