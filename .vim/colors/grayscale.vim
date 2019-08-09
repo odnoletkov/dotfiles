@@ -28,9 +28,9 @@ if &background == "light"
   hi DiffChange ctermbg=230
   hi DiffDelete ctermfg=224 ctermbg=224
   hi DiffText ctermfg=0 ctermbg=222 cterm=none
-  hi diffAdded ctermbg=120
-  hi diffRemoved ctermbg=210
-  hi diffChanged ctermbg=228
+  hi diffAdded ctermfg=2
+  hi diffRemoved ctermfg=1
+  hi diffChanged ctermfg=3
 
   hi diffFile cterm=reverse,bold
   hi diffIndexLine cterm=reverse,bold
@@ -76,9 +76,9 @@ else
   hi DiffChange ctermbg=230
   hi DiffDelete ctermfg=224 ctermbg=224
   hi DiffText ctermfg=0 ctermbg=222 cterm=none
-  hi diffAdded ctermbg=120
-  hi diffRemoved ctermbg=210
-  hi diffChanged ctermbg=228
+  hi diffAdded ctermfg=2
+  hi diffRemoved ctermfg=1
+  hi diffChanged ctermfg=3
 
   hi diffFile cterm=reverse,bold
   hi diffIndexLine cterm=reverse,bold
