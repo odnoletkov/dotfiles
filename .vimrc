@@ -11,7 +11,6 @@ set grepprg=grep\ -nsIH
 set history=200
 set hlsearch
 set incsearch
-set laststatus=2
 set noswapfile
 set shellredir=>
 set shortmess-=S

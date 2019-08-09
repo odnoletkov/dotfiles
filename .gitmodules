@@ -55,3 +55,6 @@
 [submodule ".vim/pack/max/start/vim-pbxproj"]
 	path = .vim/pack/max/start/vim-pbxproj
 	url = https://github.com/cfdrake/vim-pbxproj
+[submodule ".vim/pack/max/start/vim-flagship"]
+	path = .vim/pack/max/start/vim-flagship
+	url = git://github.com/tpope/vim-flagship.git
