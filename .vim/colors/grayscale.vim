@@ -32,6 +32,9 @@ if &background == "light"
   hi diffRemoved ctermbg=210
   hi diffChanged ctermbg=228
 
+  hi diffFile cterm=reverse,bold
+  hi diffIndexLine cterm=reverse,bold
+
   hi Statement ctermfg=none
   hi Type ctermfg=none
   hi Function ctermfg=none
@@ -76,6 +79,9 @@ else
   hi diffAdded ctermbg=120
   hi diffRemoved ctermbg=210
   hi diffChanged ctermbg=228
+
+  hi diffFile cterm=reverse,bold
+  hi diffIndexLine cterm=reverse,bold
 
   hi Statement ctermfg=none
   hi Type ctermfg=none
