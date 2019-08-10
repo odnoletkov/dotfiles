@@ -19,6 +19,4 @@ set wildmode=list:longest,full
 
 cabbrev url \v\S+:\/\/\S+
 
-nnoremap <silent> <C-L> :nohlsearch \| diffupdate<CR><C-L>
-
 let &background = {"Dark\n": 'dark', '': 'light'}[system('defaults read -g AppleInterfaceStyle')]
