@@ -15,6 +15,6 @@ sync:
 		rebase --interactive $$(git rev-list --grep="^Update submodules$$" -1 @)~
 	git submodule update --remote
 	vim -u NONE -c "helptags ALL" -c q
-	git submodule foreach 'tig --reverse $$sha1.. || :' 2>/dev/null
+	git diff --quiet || vim .git/index
 	git commit --amend --no-edit --all
 	git push --force-with-lease
