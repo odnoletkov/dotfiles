@@ -58,3 +58,6 @@
 [submodule ".vim/pack/max/start/vim-cool"]
 	path = .vim/pack/max/start/vim-cool
 	url = git://github.com/romainl/vim-cool.git
+[submodule ".vim/pack/max/start/readline.vim"]
+	path = .vim/pack/max/start/readline.vim
+	url = git://github.com/ryvnf/readline.vim.git
