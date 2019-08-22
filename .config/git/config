@@ -16,7 +16,7 @@
 [commit]
 	verbose = true
 [rebase]
-	missingCommitsCheck = warn
+	missingCommitsCheck = error
 	autoSquash = true
 [interactive]
 	singleKey = true
