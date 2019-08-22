@@ -1,14 +1,4 @@
-all: .git sync
-
-.git:
-	git init
-	git config status.showUntrackedFiles no
-	git remote add origin https://github.com/odnoletkov/dotfiles
-	git fetch
-	git checkout master
-	git submodule update --init
-
-sync:
+sync: .git
 	git pull --rebase
 	git submodule update --init
 	git -c sequence.editor='printf %s\\n 1m$$ wq | ed' \
@@ -18,3 +8,11 @@ sync:
 	git diff --quiet || vim .git/index
 	git commit --amend --no-edit --all
 	git push --force-with-lease
+
+.git:
+	git init
+	git config status.showUntrackedFiles no
+	git remote add origin https://github.com/odnoletkov/dotfiles
+	git fetch
+	git checkout master
+	git submodule update --init
