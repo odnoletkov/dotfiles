@@ -6,6 +6,7 @@ set autoindent
 set autoread
 set autowrite
 set backspace=indent,eol
+set formatoptions+=jnr
 set confirm
 set grepprg=grep\ -nsIH
 set history=200
