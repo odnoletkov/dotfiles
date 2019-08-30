@@ -45,7 +45,7 @@ if &background == "light"
   hi PreProc ctermfg=none
   hi Constant ctermfg=none
   hi Number ctermfg=none
-  hi String ctermfg=none
+  hi String ctermfg=8
   hi Comment ctermfg=238 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=254
@@ -93,7 +93,7 @@ else
   hi PreProc ctermfg=none
   hi Constant ctermfg=none
   hi Number ctermfg=none
-  hi String ctermfg=none
+  hi String ctermfg=7
   hi Comment ctermfg=239 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=233
