@@ -1,2 +1,2 @@
 #!/bin/bash
-vim .git/index -c "0Git! $*"
+vim -c "0Git! $*"
