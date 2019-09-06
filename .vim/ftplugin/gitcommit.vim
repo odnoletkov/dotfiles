@@ -10,8 +10,7 @@ function! CompleteSubject(findstart,base) abort
     return []
   endif
   let git = "git --git-dir=".shellescape(b:git_dir)
-  let res = systemlist(git.' suggest-commit --regexp-ignore-case --grep='.shellescape(a:base))
-  let res = map(res, 'split(v:val)')
-  let res = map(res, '{ "word": get(systemlist(git." diff-tree -c --root --no-patch --format=%s ".v:val[1]),0,""), "menu": v:val[0], "empty":1 }')
-  return res
+  return systemlist(git.' suggest-commit --regexp-ignore-case --grep='.shellescape(a:base))
+        \ ->map('split(v:val)')
+        \ ->map('{ "word": get(systemlist(git." diff-tree -c --root --no-patch --format=%s ".v:val[1]),0,""), "menu": v:val[0], "empty":1 }')
 endfunction
