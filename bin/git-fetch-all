@@ -1,2 +1,0 @@
-#!/bin/bash
-find "${@:-.}" -type d -name .git -exec dirname {} \; -exec git --git-dir={} fetch --all \;
