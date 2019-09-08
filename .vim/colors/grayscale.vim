@@ -35,7 +35,7 @@ if &background == "light"
   hi diffFile cterm=reverse,bold
   hi diffIndexLine cterm=reverse,bold
 
-  hi Statement ctermfg=none
+  hi Statement ctermfg=none cterm=bold
   hi Type ctermfg=none
   hi Function ctermfg=none
   hi Identifier ctermfg=none
@@ -83,7 +83,7 @@ else
   hi diffFile cterm=reverse,bold
   hi diffIndexLine cterm=reverse,bold
 
-  hi Statement ctermfg=none
+  hi Statement ctermfg=none cterm=bold
   hi Type ctermfg=none
   hi Function ctermfg=none
   hi Identifier ctermfg=none
@@ -99,6 +99,14 @@ else
   hi Visual ctermbg=233
   hi CursorLine ctermbg=232
 endif
+
+hi link Include Statement
+hi link Conditonal Statement
+hi link Repeat Statement
+hi link Label Statement
+hi link Keyword Statement
+hi link Exception Statement
+hi link Macro Statement
 
 set fillchars+=vert:│
 
