@@ -43,9 +43,7 @@ if &background == "light"
   hi Special ctermfg=none
   hi PreCondit ctermfg=none
   hi PreProc ctermfg=none
-  hi Constant ctermfg=none
-  hi Number ctermfg=none
-  hi String ctermfg=8
+  hi Constant ctermfg=8
   hi Comment ctermfg=238 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=254
@@ -91,14 +89,18 @@ else
   hi Special ctermfg=none
   hi PreCondit ctermfg=none
   hi PreProc ctermfg=none
-  hi Constant ctermfg=none
-  hi Number ctermfg=none
-  hi String ctermfg=7
+  hi Constant ctermfg=7
   hi Comment ctermfg=239 cterm=italic
   hi NonText ctermfg=4
   hi Visual ctermbg=233
   hi CursorLine ctermbg=232
 endif
+
+hi link Character Constant
+hi link Number Constant
+hi link Boolean Constant
+hi link Float Constant
+hi link String Constant
 
 hi link Include Statement
 hi link Conditonal Statement
