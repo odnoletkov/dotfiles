@@ -13,9 +13,6 @@
 [submodule ".vim/pack/max/start/vim-rhubarb"]
 	path = .vim/pack/max/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule ".vim/pack/max/start/vim-fubitive"]
-	path = .vim/pack/max/start/vim-fubitive
-	url = https://github.com/tommcdo/vim-fubitive
 [submodule ".vim/pack/max/start/vim-commentary"]
 	path = .vim/pack/max/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
