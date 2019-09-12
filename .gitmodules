@@ -61,3 +61,6 @@
 [submodule ".vim/pack/max/start/readline.vim"]
 	path = .vim/pack/max/start/readline.vim
 	url = git://github.com/ryvnf/readline.vim.git
+[submodule ".vim/pack/max/start/vim-obsession"]
+	path = .vim/pack/max/start/vim-obsession
+	url = git://github.com/tpope/vim-obsession.git
