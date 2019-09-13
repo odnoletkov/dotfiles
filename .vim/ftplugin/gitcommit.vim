@@ -1,6 +1,7 @@
 setlocal spell
 setlocal iskeyword+=-
 setlocal omnifunc=CompleteSubject
+setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+\\\|^\\[^\\ze[^\\]]\\+\\]:
 
 function! CompleteSubject(findstart,base) abort
   if a:findstart
