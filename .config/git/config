@@ -28,3 +28,6 @@
 	colorMoved = dimmed_zebra
 [push]
 	recurseSubmodules = on-demand
+[alias]
+	template = -c init.templateDir=~/.config/git/template init
+	hook = !sh -c '[ -f $0 ] || git template && $0' .git/hooks/post-commit
