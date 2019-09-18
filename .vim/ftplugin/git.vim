@@ -1,4 +1,5 @@
 setlocal nowrap
+setlocal nofoldenable
 
 function s:Jump(sign, flag)
   let start = line('.')
