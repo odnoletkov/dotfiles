@@ -4,7 +4,7 @@ setlocal nofoldenable
 function s:Jump(sign, flag)
   let start = line('.')
   if search('^[^' . a:sign . ']', 'cW' . a:flag) &&
-        \ !search('^' . a:sign . '[^' . a:sign . ']', 'W' . a:flag)
+        \ !search('^' . a:sign . '\([^' . a:sign . ']\|$\)', 'W' . a:flag)
     call cursor(start, 0)
   else
     exe 'normal! zv'
