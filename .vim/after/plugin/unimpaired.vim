@@ -5,3 +5,10 @@ nnoremap <expr> yo<Space> &diffopt =~# 'iwhite' ? ':set diffopt-=iwhite<CR>' : '
 nnoremap [oa :setlocal formatoptions+=a<CR>
 nnoremap ]oa :setlocal formatoptions-=a<CR>
 nnoremap <expr> yoa &formatoptions =~# 'a' ? ':setlocal formatoptions-=a<CR>' : ':setlocal formatoptions+=a<CR>'
+
+nnoremap ]c ]czz
+nnoremap [c [czz
+nnoremap dp dp]czz
+nnoremap do do]czz
+xnoremap dp :diffput<CR>
+xnoremap do :diffget<CR>
