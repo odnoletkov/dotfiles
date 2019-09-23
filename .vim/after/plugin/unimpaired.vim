@@ -10,5 +10,3 @@ nnoremap ]c ]czz
 nnoremap [c [czz
 nnoremap dp dp]czz
 nnoremap do do]czz
-xnoremap dp :diffput<CR>
-xnoremap do :diffget<CR>
