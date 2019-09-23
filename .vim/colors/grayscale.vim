@@ -54,8 +54,8 @@ hi DiffText ctermfg=0 ctermbg=222 cterm=none
 hi diffAdded ctermfg=2
 hi diffRemoved ctermfg=1
 hi diffChanged ctermfg=3
-hi diffFile cterm=reverse,bold
-hi diffIndexLine cterm=reverse,bold
+hi diffFile cterm=bold
+hi diffIndexLine cterm=bold
 
 hi Statement ctermfg=none cterm=bold
 hi Type ctermfg=none

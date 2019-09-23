@@ -21,8 +21,6 @@
 [interactive]
 	singleKey = true
 	diffFilter = diff-highlight
-[color "diff"]
-	meta = reverse bold
 [diff]
 	submodule = log
 	colorMoved = dimmed_zebra
