@@ -27,10 +27,10 @@ function! s:RevealHunk() abort
   while diff_hlID(end, 0) > 0
     let end += 1
   endwhile
-  while line('w$') < end && line('w0') < start
+  while line('w$') < end && line('w0') < start && line('.') > line('w0') + &scrolloff
     execute "normal! \<C-E>"
   endwhile
-  while line('w0') >= start
+  while line('w0') >= start && line('.') < line('w$') - &scrolloff
     execute "normal! \<C-Y>"
   endwhile
 endfunction
