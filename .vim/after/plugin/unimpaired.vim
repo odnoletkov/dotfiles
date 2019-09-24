@@ -31,3 +31,7 @@ function! s:RevealHunk() abort
     execute "normal! \<C-Y>"
   endwhile
 endfunction
+
+if &diff && argc() == 4 && !v:vim_did_enter
+  autocmd VimEnter * windo setlocal cursorline | normal ]n
+endif
