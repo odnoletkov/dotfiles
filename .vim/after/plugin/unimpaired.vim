@@ -11,6 +11,9 @@ nnoremap [c [c:call <SID>RevealHunk()<CR>
 nnoremap dp dp]c:call <SID>RevealHunk()<CR>
 nnoremap do do]c:call <SID>RevealHunk()<CR>
 
+nnoremap <silent> [n :execute "normal \<Plug>unimpairedContextPrevious" <Bar> call <SID>RevealHunk()<CR>
+nnoremap <silent> ]n :execute "normal \<Plug>unimpairedContextNext" <Bar> call <SID>RevealHunk()<CR>
+
 function! s:RevealHunk() abort
   let start = line('.')
   if diff_filler(start) > 0
