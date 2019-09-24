@@ -33,5 +33,5 @@ function! s:RevealHunk() abort
 endfunction
 
 if &diff && argc() == 4 && !v:vim_did_enter
-  autocmd VimEnter * windo setlocal cursorline | normal ]n
+  autocmd VimEnter * 1,3windo setlocal cursorline | wincmd w | normal ]n
 endif
