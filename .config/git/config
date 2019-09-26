@@ -34,6 +34,3 @@
 [mergetool "vimdiff1"]
 	cmd = vim -c 'hide' -c 'normal ]n' -d \"$BASE\" \"$MERGED\"
 	trustExitCode = true
-[mergetool "fugitive-index"]
-	cmd = vim -c '4wincmd w | wincmd J | normal ]n' -d fugitive://$(PWD)/.git//{2,1,3}/\"$MERGED\" \"$MERGED\"
-	trustExitCode = true
