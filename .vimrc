@@ -6,8 +6,9 @@ set autoindent
 set autoread
 set autowrite
 set backspace=indent,eol
-set formatoptions+=jnr
 set confirm
+set diffopt+=foldcolumn:0
+set formatoptions+=jnr
 set grepprg=grep\ -nsIH
 set history=200
 set hlsearch
