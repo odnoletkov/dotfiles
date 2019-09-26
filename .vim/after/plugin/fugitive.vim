@@ -8,3 +8,6 @@ nnoremap <silent> <Leader>gv :Gvdiffsplit<CR>
 nnoremap <silent> <Leader>gs :Gedit :<CR>
 nnoremap <silent> <Leader>gll :Gclog @{1}..<CR>
 nnoremap <silent> <Leader>glu :Gclog @{U}..<CR>
+
+command Gmergetool Gvdiffsplit! | Gvdiffsplit! :1 | wincmd J | normal ]n
+command Gmergetool1 silent Gvdiffsplit | unlet w:fugitive_diff_restore | set bufhidden& | hide | norma ]n
