@@ -1,2 +1,2 @@
-#!/bin/bash
-vim -c "0Git! $*"
+#!/bin/sh
+exec vim -c "0Git! $*"
