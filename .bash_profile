@@ -16,7 +16,6 @@ source /usr/local/etc/bash_completion
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 PS1='\u@\h:\W$(__git_ps1 " (%s)")\$ '
 GIT_PS1_SHOWUPSTREAM=verbose
-GIT_PS1_SHOWDIRTYSTATE=1
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
