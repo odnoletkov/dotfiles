@@ -1,6 +1,6 @@
 autocmd User Fugitive
       \ if mapcheck('<CR>', 'I') ==# "" && getcmdwintype() ==# "" && &filetype !=# "qf"|
-      \   nnoremap <silent> <buffer> <CR> :.Gblame<CR>|
+      \   nnoremap <silent> <buffer> <expr> <CR> v:count && !&readonly ? ':echo<CR>' : ':.Gblame<CR>'|
       \ endif
 
 nnoremap <silent> <Leader>ge :Gedit<CR>
