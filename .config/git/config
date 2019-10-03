@@ -28,6 +28,3 @@
 	xfuncname = ^\\s*(.*(func \\w|subscript\\(|init\\??\\(|deinit |class \\w|struct \\w|protocol \\w|extension \\w).*)$
 [push]
 	recurseSubmodules = on-demand
-[alias]
-	template = -c init.templateDir=~/.config/git/template init
-	hook = !sh -c '[ -f $0 ] || git template && $0' $(git rev-parse --git-dir)/hooks/post-commit
