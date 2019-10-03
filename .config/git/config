@@ -31,6 +31,3 @@
 [alias]
 	template = -c init.templateDir=~/.config/git/template init
 	hook = !sh -c '[ -f $0 ] || git template && $0' $(git rev-parse --git-dir)/hooks/post-commit
-[mergetool "vimdiff1"]
-	cmd = vim -c 'hide' -c 'normal ]n' -d \"$BASE\" \"$MERGED\"
-	trustExitCode = true
