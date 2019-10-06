@@ -19,6 +19,6 @@ set shortmess-=S
 set showbreak=+
 set wildmode=list:longest,full
 
-cabbrev url [[:alnum:]]\+:\/\/[[:alnum:]-_.$&+*!',/]\+
+cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
 
 let &background = {"Dark\n": 'dark', '': 'light'}[system('defaults read -g AppleInterfaceStyle')]
