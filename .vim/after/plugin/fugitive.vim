@@ -11,6 +11,7 @@ nnoremap <Leader>gll :Gclog -20<CR>
 nnoremap <Leader>gl1 :Gclog @{1}..<CR>
 nnoremap <Leader>glu :Gclog @{U}..<CR>
 nnoremap <Leader>gl% :Gclog --follow %<CR>
+nnoremap <Leader>gls :Gclog --walk-reflogs stash<CR>
 nnoremap <Leader>gl<Space> :Gclog<Space>
 nnoremap <Leader>gl. :.Gclog<CR>
 nnoremap <Leader>gl0 :0Gclog<CR>
