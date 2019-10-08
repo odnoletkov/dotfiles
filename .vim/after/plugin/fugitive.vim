@@ -7,7 +7,7 @@ nnoremap <silent> <Leader>ge :Gedit<CR>
 nnoremap <silent> <Leader>gv :Gvdiffsplit<CR>
 nnoremap <silent> <Leader>gs :Gedit :<CR>
 
-nnoremap <Leader>gll :Gclog<CR>
+nnoremap <Leader>gll :Gclog -20<CR>
 nnoremap <Leader>gl1 :Gclog @{1}..<CR>
 nnoremap <Leader>glu :Gclog @{U}..<CR>
 nnoremap <Leader>gl% :Gclog --follow %<CR>
