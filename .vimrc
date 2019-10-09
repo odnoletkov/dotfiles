@@ -22,3 +22,6 @@ set wildmode=list:longest,full
 cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
 
 let &background = {"Dark\n": 'dark', '': 'light'}[system('defaults read -g AppleInterfaceStyle')]
+
+nnoremap <silent> <C-W>O :tabonly<CR>
+nnoremap <silent> <C-W>C :tabclose<CR>
