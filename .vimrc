@@ -14,6 +14,7 @@ set history=200
 set hlsearch
 set incsearch
 set noswapfile
+set scrolloff=1
 set shellredir=>
 set shortmess-=S
 set showbreak=+
