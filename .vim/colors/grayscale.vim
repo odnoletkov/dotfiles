@@ -19,6 +19,11 @@ if &background == "light"
   hi Constant ctermfg=8
   hi Comment ctermfg=238 cterm=italic
   hi Visual ctermbg=254
+
+  hi DiffAdd ctermbg=193
+  hi DiffChange ctermbg=230
+  hi DiffDelete ctermfg=224 ctermbg=224
+  hi DiffText ctermfg=0 ctermbg=222 cterm=none
 else
   hi StatusLineNC ctermbg=none
   hi CursorLine cterm=none ctermbg=232
@@ -36,9 +41,14 @@ else
   hi Constant ctermfg=7
   hi Comment ctermfg=239 cterm=italic
   hi Visual ctermbg=233
+
+  hi DiffAdd ctermbg=22
+  hi DiffChange ctermbg=100
+  hi DiffDelete ctermfg=52 ctermbg=52
+  hi DiffText ctermfg=0 ctermbg=222 cterm=none
 endif
 
-hi TabLine cterm=reverse
+hi TabLine cterm=reverse ctermfg=none
 hi TabLineSel cterm=reverse,bold
 hi VertSplit cterm=none
 hi LineNr ctermfg=4
@@ -47,10 +57,6 @@ hi Folded ctermfg=4 ctermbg=none
 hi FoldColumn ctermbg=none ctermfg=4
 hi Todo ctermfg=none ctermbg=none cterm=underline
 
-hi DiffAdd ctermbg=193
-hi DiffChange ctermbg=230
-hi DiffDelete ctermfg=224 ctermbg=224
-hi DiffText ctermfg=0 ctermbg=222 cterm=none
 hi diffAdded ctermfg=2
 hi diffRemoved ctermfg=1
 hi diffChanged ctermfg=3
