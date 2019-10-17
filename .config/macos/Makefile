@@ -1,56 +1,76 @@
-all: macos Xcode.app
+all: NSGlobalDomain com.apple.AppleMultitouchTrackpad com.apple.Safari com.apple.Terminal com.apple.dock com.apple.finder com.apple.iChat com.apple.menuextra.clock com.apple.messageshelper.MessageController com.apple.touchbar.agent com.apple.dt.Xcode
 
-macos:
-	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-	defaults write NSGlobalDomain InitialKeyRepeat -int 25
-	defaults write NSGlobalDomain KeyRepeat -int 2
-	defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
-	defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-	defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
-	defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-	defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-	defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
-	defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-	defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-	defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
-	defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0
-	defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -bool false
-	defaults write NSGlobalDomain com.apple.trackpad.scaling -float 0.875
-	defaults write com.apple.AppleMultitouchTrackpad.plist Clicking -bool true
-	defaults write com.apple.AppleMultitouchTrackpad.plist TrackpadThreeFingerDrag -bool true
-	defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-	defaults write com.apple.Safari ShowStatusBar -bool true
-	defaults write com.apple.Safari ShowStatusBarInFullScreen -bool true
-	defaults write com.apple.Terminal AutoMarkPromptLines -bool false
-	defaults write com.apple.dock autohide -bool true
-	defaults write com.apple.dock autohide-delay -float 0.0
-	defaults write com.apple.dock autohide-time-modifier -float 0.0
-	defaults write com.apple.dock magnification -bool false
-	defaults write com.apple.dock mru-spaces -bool false
-	defaults write com.apple.dock orientation -string "left"
-	defaults write com.apple.dock show-process-indicators -bool true
-	defaults write com.apple.dock tilesize -int 128
-	defaults write com.apple.finder DisableAllAnimations -bool true
-	defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-	defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
-	defaults write com.apple.finder NewWindowTarget -string PfLo
-	defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME/"
-	defaults write com.apple.finder QLEnableTextSelection -bool true
-	defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-	defaults write com.apple.iChat TextSize -int 7
-	defaults write com.apple.menuextra.clock DateFormat "EEE d MMM  HH:mm:ss"
-	defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add automaticEmojiSubstitutionEnablediMessage -bool false
-	defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add automaticQuoteSubstitutionEnabled -bool false
-	defaults write com.apple.touchbar.agent PresentationModeGlobal functionKeys
+W=defaults write $@
 
-Xcode.app:
-	defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
-	defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
-	defaults write com.apple.dt.Xcode DVTTextEditorWrapsLines -bool false
-	defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
-	defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool false
-	defaults write com.apple.dt.Xcode DVTTextShowPageGuide -bool true
-	defaults write com.apple.dt.Xcode IDEIndexerActivityShowNumericProgress -bool true
-	defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
-	defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
+NSGlobalDomain:
+	$W AppleShowAllExtensions -bool true
+	$W InitialKeyRepeat -int 25
+	$W KeyRepeat -int 2
+	$W NSAutomaticCapitalizationEnabled -bool false
+	$W NSAutomaticDashSubstitutionEnabled -bool false
+	$W NSAutomaticPeriodSubstitutionEnabled -bool false
+	$W NSAutomaticQuoteSubstitutionEnabled -bool false
+	$W NSAutomaticSpellingCorrectionEnabled -bool false
+	$W NSNavPanelExpandedStateForSaveMode -bool true
+	$W NSTableViewDefaultSizeMode -int 2
+	$W PMPrintingExpandedStateForPrint -bool true
+	$W com.apple.mouse.tapBehavior -int 1
+	$W com.apple.sound.beep.feedback -bool false
+	$W com.apple.sound.beep.volume -float 0
+	$W com.apple.sound.uiaudio.enabled -bool false
+	$W com.apple.trackpad.scaling -float 0.875
+
+com.apple.AppleMultitouchTrackpad:
+	$W Clicking -bool true
+	$W TrackpadThreeFingerDrag -bool true
+
+com.apple.Safari:
+	$W ShowFullURLInSmartSearchField -bool true
+	$W ShowStatusBar -bool true
+	$W ShowStatusBarInFullScreen -bool true
+
+com.apple.Terminal:
+	$W AutoMarkPromptLines -bool false
+
+com.apple.dock:
+	$W autohide -bool true
+	$W autohide-delay -float 0.0
+	$W autohide-time-modifier -float 0.0
+	$W magnification -bool false
+	$W mru-spaces -bool false
+	$W orientation -string "left"
+	$W show-process-indicators -bool true
+	$W tilesize -int 128
+
+com.apple.finder:
+	$W DisableAllAnimations -bool true
+	$W FXEnableExtensionChangeWarning -bool false
+	$W FXEnableRemoveFromICloudDriveWarning -bool false
+	$W NewWindowTarget -string PfLo
+	$W NewWindowTargetPath -string "file://$HOME/"
+	$W QLEnableTextSelection -bool true
+	$W _FXShowPosixPathInTitle -bool true
+
+com.apple.iChat:
+	$W TextSize -int 7
+
+com.apple.menuextra.clock:
+	$W DateFormat "EEE d MMM  HH:mm:ss"
+
+com.apple.messageshelper.MessageController:
+	$W SOInputLineSettings -dict-add automaticEmojiSubstitutionEnablediMessage -bool false
+	$W SOInputLineSettings -dict-add automaticQuoteSubstitutionEnabled -bool false
+
+com.apple.touchbar.agent:
+	$W PresentationModeGlobal functionKeys
+
+com.apple.dt.Xcode:
+	$W DVTTextEditorTrimTrailingWhitespace -bool true
+	$W DVTTextEditorTrimWhitespaceOnlyLines -bool true
+	$W DVTTextEditorWrapsLines -bool false
+	$W DVTTextPageGuideLocation -int 100
+	$W DVTTextShowLineNumbers -bool false
+	$W DVTTextShowPageGuide -bool true
+	$W IDEIndexerActivityShowNumericProgress -bool true
+	$W IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
+	$W ShowBuildOperationDuration -bool true
