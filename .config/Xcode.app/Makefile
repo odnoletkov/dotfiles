@@ -8,4 +8,3 @@ install:
 	defaults write com.apple.dt.Xcode IDEIndexerActivityShowNumericProgress -bool true
 	defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
 	defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
-	defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string current.xccolortheme
