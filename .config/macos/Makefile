@@ -1,4 +1,6 @@
-defaults:
+all: macos Xcode.app
+
+macos:
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	defaults write NSGlobalDomain InitialKeyRepeat -int 25
 	defaults write NSGlobalDomain KeyRepeat -int 2
@@ -41,3 +43,14 @@ defaults:
 	defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add automaticEmojiSubstitutionEnablediMessage -bool false
 	defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add automaticQuoteSubstitutionEnabled -bool false
 	defaults write com.apple.touchbar.agent PresentationModeGlobal functionKeys
+
+Xcode.app:
+	defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
+	defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
+	defaults write com.apple.dt.Xcode DVTTextEditorWrapsLines -bool false
+	defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
+	defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool false
+	defaults write com.apple.dt.Xcode DVTTextShowPageGuide -bool true
+	defaults write com.apple.dt.Xcode IDEIndexerActivityShowNumericProgress -bool true
+	defaults write com.apple.dt.Xcode IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
+	defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
