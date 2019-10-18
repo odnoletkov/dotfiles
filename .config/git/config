@@ -27,4 +27,4 @@
 [diff "swift"]
 	xfuncname = ^\\s*(.*(func \\w|subscript\\(|init\\??\\(|deinit |class \\w|struct \\w|protocol \\w|extension \\w).*)$
 [push]
-	recurseSubmodules = on-demand
+	recurseSubmodules = check
