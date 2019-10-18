@@ -37,9 +37,11 @@ com.apple.dock:
 	$W autohide-delay -float 0.0
 	$W autohide-time-modifier -float 0.0
 	$W magnification -bool false
+	$W minimize-to-application -bool true
 	$W mru-spaces -bool false
 	$W orientation -string "left"
 	$W show-process-indicators -bool true
+	$W show-recents -bool false
 	$W tilesize -int 128
 
 com.apple.finder:
@@ -50,6 +52,7 @@ com.apple.finder:
 	$W NewWindowTargetPath -string "file://$HOME/"
 	$W QLEnableTextSelection -bool true
 	$W _FXShowPosixPathInTitle -bool true
+	$W _FXSortFoldersFirst -bool true
 
 com.apple.iChat:
 	$W TextSize -int 7
