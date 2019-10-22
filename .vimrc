@@ -6,6 +6,7 @@ set autoindent
 set autoread
 set autowrite
 set backspace=indent,eol
+set completefunc=syntaxcomplete#Complete
 set confirm
 set diffopt+=foldcolumn:0
 set formatoptions+=jnr
