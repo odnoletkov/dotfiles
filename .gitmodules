@@ -61,3 +61,6 @@
 [submodule ".vim/pack/max/start/vim-obsession"]
 	path = .vim/pack/max/start/vim-obsession
 	url = git://github.com/tpope/vim-obsession.git
+[submodule ".vim/pack/max/start/vim-jq"]
+	path = .vim/pack/max/start/vim-jq
+	url = https://github.com/bfrg/vim-jq
