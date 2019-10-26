@@ -61,3 +61,6 @@
 [submodule ".vim/pack/max/start/vim-jq"]
 	path = .vim/pack/max/start/vim-jq
 	url = https://github.com/bfrg/vim-jq
+[submodule ".vim/pack/max/start/vim-jqplay"]
+	path = .vim/pack/max/start/vim-jqplay
+	url = https://github.com/bfrg/vim-jqplay
