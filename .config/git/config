@@ -9,9 +9,9 @@
 [merge]
 	tool = vimdiff
 [difftool]
+	prompt = false
 	trustExitCode = true
 [mergetool]
-	prompt = false
 	keepBackup = false
 [commit]
 	verbose = true
