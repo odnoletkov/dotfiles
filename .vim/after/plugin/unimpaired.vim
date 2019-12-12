@@ -41,5 +41,5 @@ function! s:RevealHunk() abort
 endfunction
 
 if &diff && argc() == 4 && !v:vim_did_enter
-  autocmd VimEnter * normal ]n
+  autocmd VimEnter * match Error '^[<=>|]\{7}[<=>|]\@!.*$' | normal ]n
 endif
