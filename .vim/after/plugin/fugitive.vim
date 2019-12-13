@@ -19,7 +19,7 @@ nnoremap <Leader>gl. :.Gclog<CR>
 nnoremap <Leader>gl0 :0Gclog<CR>
 vnoremap <Leader>gl :Gclog<CR>
 
-command -bar Ghide unlet! w:fugitive_diff_restore | set bufhidden& | hide
+command -bar Ghide unlet! w:fugitive_diff_restore | set bufhidden& | set diffopt-=closeoff | hide | set diffopt+=closeoff
 command Gmergetool Gvdiffsplit! | Gvdiffsplit! :1 | wincmd J | normal ]n
 command Gmergetool1 silent Gvdiffsplit | Ghide | normal ]n
 command Gmergetool2 wincmd o
