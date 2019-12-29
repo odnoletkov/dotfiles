@@ -5,9 +5,13 @@ autocmd User Fugitive
 
 nnoremap <silent> <Leader>ge :Gedit<CR>
 nnoremap <silent> <Leader>gv :Gvdiffsplit<CR>
+nnoremap <silent> <Leader>gV :Gvdiffsplit @<CR>
 nnoremap <silent> <Leader>gs :Gedit :<CR>
+nnoremap <silent> <Leader>gS :tab G<CR>
 nnoremap <silent> <Leader>gb :Gblame<CR>
 vnoremap <silent> <Leader>gb :Gblame<CR>
+nnoremap <silent> <Leader>gcc :Gcommit<CR>
+nnoremap <silent> <Leader>gc% :Gcommit %<CR>
 
 nnoremap <Leader>gll :Gclog -20<CR>
 nnoremap <Leader>gl1 :Gclog @{1}..<CR>
