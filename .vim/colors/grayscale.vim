@@ -42,7 +42,7 @@ else
   hi Comment ctermfg=239 cterm=italic
   hi Visual ctermbg=233
 
-  hi DiffAdd ctermbg=22
+  hi DiffAdd ctermbg=28
   hi DiffChange ctermbg=100
   hi DiffDelete ctermfg=52 ctermbg=52
   hi DiffText ctermfg=0 ctermbg=222 cterm=none
