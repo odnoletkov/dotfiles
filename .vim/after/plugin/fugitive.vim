@@ -1,5 +1,5 @@
-autocmd User Fugitive
-      \ if mapcheck('<CR>', 'I') ==# "" && getcmdwintype() ==# "" && &filetype !=# "qf"|
+autocmd BufNewFile,BufReadPost *
+      \ if mapcheck('<CR>', 'I') ==# "" && &filetype !=# "qf"|
       \   nnoremap <silent> <buffer> <expr> <CR> v:count && !&readonly ? ':echo<CR>' : ':.Gblame<CR>'|
       \ endif
 
