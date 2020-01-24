@@ -1,3 +1,3 @@
 setlocal nowrap
 setlocal tabstop=1 shiftwidth=1
-setlocal makeprg=xcproj\ --project\ %\ touch
+setlocal makeprg=xcodeproj-format\ %
