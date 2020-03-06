@@ -4,9 +4,6 @@
 [submodule ".vim/pack/max/start/vim-unimpaired"]
 	path = .vim/pack/max/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
-[submodule ".vim/pack/max/start/vim-swift"]
-	path = .vim/pack/max/start/vim-swift
-	url = https://github.com/odnoletkov/vim-swift
 [submodule ".vim/pack/max/start/vim-rhubarb"]
 	path = .vim/pack/max/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
