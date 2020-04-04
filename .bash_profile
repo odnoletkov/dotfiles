@@ -9,8 +9,6 @@ stty -ixon
 export CLICOLOR=1
 export GREP_OPTIONS=--color=auto
 
-export EDITOR=vim
-
 source /usr/local/etc/bash_completion
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
