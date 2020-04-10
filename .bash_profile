@@ -1,8 +1,4 @@
-source $HOME/.profile
-
-HISTCONTROL=erasedups
-HISTSIZE=10000
-shopt -s histappend
+source $HOME/.bashrc
 
 source /usr/local/etc/bash_completion
 
