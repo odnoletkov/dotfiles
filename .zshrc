@@ -8,5 +8,5 @@ autoload -Uz compinit
 compinit
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-setopt PROMPT_SUBST ; RPROMPT='$(__git_ps1)'
+setopt PROMPT_SUBST ; PS1='%n@%m:%c$(__git_ps1 " (%s)")%% '
 GIT_PS1_SHOWUPSTREAM=verbose
