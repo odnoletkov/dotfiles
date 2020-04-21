@@ -6,7 +6,7 @@
 	url = https://github.com/tpope/vim-unimpaired
 [submodule ".vim/pack/max/start/vim-rhubarb"]
 	path = .vim/pack/max/start/vim-rhubarb
-	url = https://github.com/tpope/vim-rhubarb.git
+	url = https://github.com/tpope/vim-rhubarb
 [submodule ".vim/pack/max/start/vim-commentary"]
 	path = .vim/pack/max/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
@@ -21,7 +21,7 @@
 	url = https://github.com/tpope/vim-characterize
 [submodule ".vim/pack/max/start/vim-sleuth"]
 	path = .vim/pack/max/start/vim-sleuth
-	url = https://github.com/tpope/vim-sleuth.git
+	url = https://github.com/tpope/vim-sleuth
 [submodule ".vim/pack/max/start/vim-eunuch"]
 	path = .vim/pack/max/start/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
@@ -30,31 +30,31 @@
 	url = https://github.com/tpope/vim-repeat
 [submodule ".vim/pack/max/start/vim-scriptease"]
 	path = .vim/pack/max/start/vim-scriptease
-	url = https://github.com/tpope/vim-scriptease.git
+	url = https://github.com/tpope/vim-scriptease
 [submodule ".vim/pack/max/start/vim-github-link-opener"]
 	path = .vim/pack/max/start/vim-github-link-opener
-	url = https://github.com/gabebw/vim-github-link-opener.git
+	url = https://github.com/gabebw/vim-github-link-opener
 [submodule ".vim/pack/max/start/vim-dispatch"]
 	path = .vim/pack/max/start/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch.git
+	url = https://github.com/tpope/vim-dispatch
 [submodule ".vim/pack/max/start/vim-diff-prune"]
 	path = .vim/pack/max/start/vim-diff-prune
-	url = https://sanctum.geek.nz/code/vim-diff-prune.git
+	url = https://sanctum.geek.nz/code/vim-diff-prune
 [submodule ".vim/pack/max/start/vim-pbxproj"]
 	path = .vim/pack/max/start/vim-pbxproj
 	url = https://github.com/cfdrake/vim-pbxproj
 [submodule ".vim/pack/max/start/vim-flagship"]
 	path = .vim/pack/max/start/vim-flagship
-	url = git://github.com/tpope/vim-flagship.git
+	url = https://github.com/tpope/vim-flagship
 [submodule ".vim/pack/max/start/vim-cool"]
 	path = .vim/pack/max/start/vim-cool
-	url = git://github.com/romainl/vim-cool.git
+	url = https://github.com/romainl/vim-cool
 [submodule ".vim/pack/max/start/readline.vim"]
 	path = .vim/pack/max/start/readline.vim
-	url = git://github.com/ryvnf/readline.vim.git
+	url = https://github.com/ryvnf/readline.vim
 [submodule ".vim/pack/max/start/vim-obsession"]
 	path = .vim/pack/max/start/vim-obsession
-	url = git://github.com/tpope/vim-obsession.git
+	url = https://github.com/tpope/vim-obsession
 [submodule ".vim/pack/max/start/vim-jq"]
 	path = .vim/pack/max/start/vim-jq
 	url = https://github.com/bfrg/vim-jq
