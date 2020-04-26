@@ -2,5 +2,5 @@ set diff-highlight = yes
 
 bind generic 9 !+bash -c "echo -n %(commit) | tee >(pbcopy)"
 bind generic D !git difftool %(commit)^!
-bind generic x @git open-url %(commit)
+bind generic x @sh -c "git show --no-patch --format=%b %(commit) | grep -oE 'http.?://\\S+' | xargs open"
 bind generic O !git checkout %(commit)
