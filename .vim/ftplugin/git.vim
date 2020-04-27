@@ -10,7 +10,7 @@ function s:Jump(sign, flag)
     exe 'normal! zv'
   endif
 endfunction
-nnoremap <silent> <buffer> ]+ :call <SID>Jump('+', '')<CR>
+nnoremap <silent> <buffer> ]= :call <SID>Jump('+', '')<CR>
 nnoremap <silent> <buffer> ]- :call <SID>Jump('-', '')<CR>
-nnoremap <silent> <buffer> [+ :call <SID>Jump('+', 'b')<CR>
+nnoremap <silent> <buffer> [= :call <SID>Jump('+', 'b')<CR>
 nnoremap <silent> <buffer> [- :call <SID>Jump('-', 'b')<CR>
