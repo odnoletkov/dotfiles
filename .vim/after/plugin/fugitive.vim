@@ -12,6 +12,8 @@ nnoremap <silent> <Leader>gb :Gblame<CR>
 vnoremap <silent> <Leader>gb :Gblame<CR>
 nnoremap <silent> <Leader>gcc :Gcommit<CR>
 nnoremap <silent> <Leader>gc% :Gcommit %<CR>
+nnoremap <Leader>gp :Git push<CR>
+nnoremap <Leader>gP :Git push --force-with-lease<CR>
 
 nnoremap <Leader>gll :Gclog -20<CR>
 nnoremap <Leader>gl1 :Gclog @{1}..<CR>
