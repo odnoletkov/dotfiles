@@ -1,4 +1,3 @@
-setlocal nowrap
 setlocal nofoldenable
 
 function s:Jump(sign, flag)
