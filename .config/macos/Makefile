@@ -25,6 +25,7 @@ com.apple.AppleMultitouchTrackpad:
 	$W TrackpadThreeFingerDrag -bool true
 
 com.apple.Safari:
+	$W FindOnPageMatchesWordStartsOnly -bool false
 	$W ShowFullURLInSmartSearchField -bool true
 	$W ShowStatusBar -bool true
 	$W ShowStatusBarInFullScreen -bool true
