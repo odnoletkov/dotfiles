@@ -25,5 +25,5 @@ let &background = get({"Dark\n": 'dark'}, system('defaults read -g AppleInterfac
 
 cabbrev url [[:alnum:]]\+:\/\/[[:alnum:].=#/?&*!'-]\+
 
-nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
-nnoremap <silent> <C-W>C :<C-U>execute (v:count ?? '') . 'tabclose'<CR>
+nnoremap <silent> <C-W>O :<C-U>execute (v:count ? v:count : '') . 'tabonly'<CR>
+nnoremap <silent> <C-W>C :<C-U>execute (v:count ? v:count : '') . 'tabclose'<CR>
