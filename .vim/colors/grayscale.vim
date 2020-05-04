@@ -2,7 +2,7 @@ hi clear
 syntax reset
 let colors_name = "grayscale"
 
-hi Title ctermfg=none
+hi Title ctermfg=none cterm=bold
 
 hi TabLine cterm=none
 hi VertSplit cterm=none
@@ -25,6 +25,10 @@ hi Special ctermfg=none
 hi PreCondit ctermfg=none
 hi PreProc ctermfg=none
 hi NonText ctermfg=4
+
+hi markdownCode ctermfg=4
+hi htmlBold cterm=bold
+hi htmlItalic cterm=italic
 
 set fillchars+=vert:│
 
