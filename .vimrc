@@ -22,6 +22,7 @@ set showbreak=+
 set wildmode=list:longest,full
 
 cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
+cabbrev error ^[[:fname:]]\+:\d\+:\d\+: \zserror:
 
 let &background = {"Dark\n": 'dark', '': 'light'}[system('defaults read -g AppleInterfaceStyle')]
 
