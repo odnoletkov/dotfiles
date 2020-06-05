@@ -1,4 +1,4 @@
-all: NSGlobalDomain com.apple.AppleMultitouchTrackpad com.apple.Safari com.apple.Terminal com.apple.dock com.apple.finder com.apple.iChat com.apple.menuextra.clock com.apple.messageshelper.MessageController com.apple.touchbar.agent com.apple.dt.Xcode
+all: NSGlobalDomain com.apple.AppleMultitouchTrackpad com.apple.Safari com.apple.Terminal com.apple.dock com.apple.finder com.apple.iChat com.apple.menuextra.clock com.apple.messageshelper.MessageController com.apple.touchbar.agent com.apple.dt.Xcode com.apple.iphonesimulator
 
 W=defaults write $@
 
@@ -78,3 +78,6 @@ com.apple.dt.Xcode:
 	$W IDEIndexerActivityShowNumericProgress -bool true
 	$W IDEKeyBindingCurrentPreferenceSet -string max.idekeybindings
 	$W ShowBuildOperationDuration -bool true
+
+com.apple.iphonesimulator:
+	$W AllowFullscreenMode -bool YES
