@@ -55,3 +55,6 @@
 [submodule ".vim/pack/max/start/vim-jqplay"]
 	path = .vim/pack/max/start/vim-jqplay
 	url = https://github.com/bfrg/vim-jqplay
+[submodule ".vim/pack/max/start/vim-projectionist"]
+	path = .vim/pack/max/start/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist
