@@ -1,0 +1,37 @@
+{
+  "*.xcodeproj/project.pbxproj": {
+    "*.xcodeproj/project.pbxproj": {
+      "type": "project"
+    },
+    "*.h": {
+      "alternate": "{}.m",
+      "type": "header"
+    },
+    "*.m": {
+      "alternate": "{}.h",
+      "type": "source"
+    },
+    "*.swift": {
+      "type": "source"
+    },
+    "*": {
+      "start": ":Dispatch! open -a Xcode ."
+    }
+  },
+  "Package.swift": {
+    "Package.swift": {
+      "type": "package"
+    },
+    "Sources/*.swift": {
+      "type": "source"
+    },
+    "Tests/*.swift": {
+      "type": "test"
+    },
+    "*": {
+      "start": ":Dispatch! open -a Xcode .",
+      "make": "swift build",
+      "dispatch": "swift test"
+    }
+  }
+}
