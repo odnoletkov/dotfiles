@@ -30,3 +30,5 @@
 	xfuncname = ^\\/\\* Begin \\w+ section \\*\\/$
 [push]
 	recurseSubmodules = check
+[pull]
+	ff = only
