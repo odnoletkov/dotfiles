@@ -26,6 +26,4 @@ vnoremap <Leader>gl :Gclog<CR>
 nnoremap <Leader>gd1 :Git diff @{1}<CR>
 nnoremap <Leader>gr1 :Git reset @{1}<CR>
 
-command -bar Ghide unlet! w:fugitive_diff_restore | set bufhidden& | set diffopt-=closeoff | hide | set diffopt+=closeoff
 command Gmergetool only | Gvdiffsplit! | Gvdiffsplit! :1 | wincmd J
-command Gmergetool1 silent Gvdiffsplit | Ghide | normal ]n
