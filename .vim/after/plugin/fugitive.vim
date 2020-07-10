@@ -29,12 +29,3 @@ nnoremap <Leader>gr1 :Git reset @{1}<CR>
 command -bar Ghide unlet! w:fugitive_diff_restore | set bufhidden& | set diffopt-=closeoff | hide | set diffopt+=closeoff
 command Gmergetool only | Gvdiffsplit! | Gvdiffsplit! :1 | wincmd J
 command Gmergetool1 silent Gvdiffsplit | Ghide | normal ]n
-command Gmergetool2 wincmd o
-                  \| execute 'normal zt'
-                  \| %s/^=======\_$\zs\_.\{-}\_^>>>>>>> .*$//
-                  \| execute 'normal ``'
-                  \| Gvdiffsplit! :1
-                  \| Gvdiffsplit! :3
-                  \| wincmd J
-                  \| execute 'windo setlocal nofoldenable'
-                  \| setlocal nodiff scrollbind cursorbind nowrap
