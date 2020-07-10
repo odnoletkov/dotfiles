@@ -13,8 +13,6 @@ nnoremap <expr> yoa &formatoptions =~# 'a' ? ':setlocal formatoptions-=a<CR>' : 
 
 nnoremap ]c ]c:call <SID>RevealHunk()<CR>
 nnoremap [c [c:call <SID>RevealHunk()<CR>
-nnoremap dp dp]c:call <SID>RevealHunk()<CR>
-nnoremap do do]c:call <SID>RevealHunk()<CR>
 
 nnoremap <silent> [n :execute "normal \<Plug>unimpairedContextPrevious" <Bar> call <SID>RevealHunk()<CR>
 nnoremap <silent> ]n :execute "normal \<Plug>unimpairedContextNext" <Bar> call <SID>RevealHunk()<CR>
