@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Xcode"	set CurrentDocument to document 1 whose name ends with (get name of front window)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
+					<string>tell application "Xcode"	set CurrentDocument to document 1 whose name ends with (get name of front window)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "unset HISTFILE; vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
