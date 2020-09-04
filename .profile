@@ -7,7 +7,4 @@ export GREP_OPTIONS=--color=auto
 
 export EDITOR=vim
 
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
 stty -ixon
