@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+
+cmd="$1"
+shift
+
+case "$cmd" in
+
+	list)
+		git log --oneline --graph --no-merges refs/heads/tasks ^refs/heads/tasks-removed --
+		;;
+
+	add)
+		git update-ref refs/heads/tasks $(git commit-tree -p refs/heads/tasks -p $(git commit-tree "$@" 4b825dc642cb6eb9a060e54bf8d69288fbee4904) 4b825dc642cb6eb9a060e54bf8d69288fbee4904)
+		;;
+
+	remove)
+		git update-ref refs/heads/tasks-removed $(git commit-tree -p refs/heads/tasks-removed -p "${1?missing task}" 4b825dc642cb6eb9a060e54bf8d69288fbee4904)
+		;;
+
+	*)
+		echo "Unknown $1"
+		exit 1
+		;;
+esac
