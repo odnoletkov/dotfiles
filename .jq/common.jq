@@ -1,13 +1,11 @@
 def unique_count:
-  group_by(.) | map({(.[0] | tostring): length}) | add;
+  reduce .[] as $item ({}; .[$item | tostring] += 1);
 
 def ratio_values:
-  add as $sum | map_values(. / $sum);
+  .[] /= add;
 
 def intersection:
-  def i(y): ((unique + (y|unique)) | sort) as $sorted
-    | reduce range(1; $sorted|length) as $i ([]; if $sorted[$i] == $sorted[$i-1] then . + [$sorted[$i]] else . end);
-  reduce .[1:][] as $a (.[0]; i($a));
+  reduce .[1:][] as $item (.[0] | unique; . - (. - $item));
 
 def assoc_by(f):
-  map({key: f | tostring, value: .}) | from_entries;
+  map({(f | tostring): .}) | add;
