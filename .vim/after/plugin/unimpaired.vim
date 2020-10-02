@@ -11,6 +11,8 @@ nnoremap [oa :setlocal formatoptions+=a<CR>
 nnoremap ]oa :setlocal formatoptions-=a<CR>
 nnoremap <expr> yoa &formatoptions =~# 'a' ? ':setlocal formatoptions-=a<CR>' : ':setlocal formatoptions+=a<CR>'
 
+nnoremap <silent> yoe :let [&conceallevel, &concealcursor] = get({'0':[2,''],'2':[2,'n']}, &conceallevel . &concealcursor, [0,''])<CR>
+
 nnoremap ]c ]c:call <SID>RevealHunk()<CR>
 nnoremap [c [c:call <SID>RevealHunk()<CR>
 
