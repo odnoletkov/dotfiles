@@ -28,6 +28,26 @@
 			</dict>
 			<dict>
 				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.apple.dt.XCDocumenter.XCDocumenterExtension,IDESourceEditorExtensionCommand:com.apple.dt.XCDocumenter.XCDocumenterExtension.XCDocumenterCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>XCDocumenterExtension</string>
+				<key>Title</key>
+				<string>Document</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>findSelectedTextInWorkspace:</string>
 				<key>Alternate</key>
 				<string>NO</string>
