@@ -1,4 +1,16 @@
 {
+  ".git/|.git|.projections.json": {
+    ".projections.json": {
+      "type": "projections",
+      "template": [
+        "{",
+        "  \"*\": {",
+        "    \"\": \"\"",
+        "  }",
+        "}"
+      ]
+    }
+  },
   "*.xcodeproj/project.pbxproj": {
     "*.xcodeproj/project.pbxproj": {
       "type": "project"
