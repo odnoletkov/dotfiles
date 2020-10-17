@@ -15,7 +15,8 @@
       "type": "source"
     },
     "*": {
-      "start": ":Dispatch! open -a Xcode ."
+      "start": ":Dispatch! open -a Xcode .",
+      "make": "xcodebuild-auto -quiet"
     }
   },
   "Package.swift": {

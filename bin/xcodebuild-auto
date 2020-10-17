@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+args=("$@")
+
+if [[ $* != *-scheme* ]]; then
+	scheme=($(find ./*.xc* -name \*.xcscheme))
+	if (( ${#scheme[@]} == 1 )); then
+		scheme="${scheme##*/}"
+		scheme="${scheme%.xcscheme}"
+		args+=(-scheme "$scheme")
+	fi
+fi
+
+if [[ $* != *-destination* ]]; then
+	args+=(-destination "generic/platform=iOS Simulator")
+fi
+
+xcodebuild "${args[@]}"
