@@ -12,7 +12,10 @@ CompilerSet errorformat=
       \%W%f:%l:%c:\ warning:\ %m,
       \%I%f:%l:%c:\ note:\ %m,
       \%A%f:%l:%c:\ %m,
-      \%-Gnote:\ Using\ new\ build\ system%.%#,
+      \%-Gnote:\ Using\ new\ build\ system,
+      \%-Gnote:\ Building\ targets\ in\ parallel,
+      \%-Gnote:\ Planning\ build,
+      \%-Gnote:\ Using\ build\ description\ from\ disk,
       \%-G**\ BUILD\ FAILED\ **,
       \%-G,
 
