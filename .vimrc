@@ -24,7 +24,5 @@ set wildmode=list:longest,full
 cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
 cabbrev error ^[[:fname:]]\+:\d\+:\d\+: \zserror:
 
-let &background = get({"Dark\n": 'dark'}, system('defaults read -g AppleInterfaceStyle'), 'light')
-
 nnoremap <silent> <C-W>O :tabonly<CR>
 nnoremap <silent> <C-W>C :tabclose<CR>
