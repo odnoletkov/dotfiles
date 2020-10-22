@@ -13,7 +13,8 @@
   },
   "*.xcodeproj/project.pbxproj": {
     "*.xcodeproj/project.pbxproj": {
-      "type": "project"
+      "type": "project",
+      "make": "xcodeproj-format %"
     },
     "*.h": {
       "alternate": "{}.m",
