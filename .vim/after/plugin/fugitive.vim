@@ -7,7 +7,7 @@ nnoremap <silent> <Leader>ge :Gedit<CR>
 nnoremap <silent> <Leader>gv :Gvdiffsplit<CR>
 nnoremap <silent> <Leader>gV :Gvdiffsplit @<CR>
 nnoremap <silent> <Leader>gs :Gedit :<CR>
-nnoremap <silent> <Leader>gS :tab G<CR>
+nnoremap <silent> <Leader>gS :Gtabedit :<CR>
 nnoremap <silent> <Leader>gb :Gblame<CR>
 nnoremap <silent> <Leader>gmt :Gmergetool<CR>
 
