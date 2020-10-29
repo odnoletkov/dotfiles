@@ -1,7 +1,4 @@
-nnoremap =a :argument<CR>
-nnoremap =b :buffer<CR>
 nnoremap =q :cc<CR>
-nnoremap =l :ll<CR>
 
 nnoremap [o<Space> :set diffopt+=iwhite<CR>
 nnoremap ]o<Space> :set diffopt-=iwhite<CR>
