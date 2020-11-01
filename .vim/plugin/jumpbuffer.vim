@@ -1,4 +1,4 @@
-function s:Jump(dir, map)
+function! s:Jump(dir, map) abort
     let [list, pos] = getjumplist()
     if a:dir < 0
         let list = reverse(list)
@@ -11,13 +11,13 @@ function s:Jump(dir, map)
     endif
 endfunction
 
-function s:JumpOtherBuffer(dir)
+function! s:JumpOtherBuffer(dir)
     call s:Jump(a:dir, 'v:val.bufnr != '.bufnr('%'))
 endfunction
 nnoremap <silent> [j :call <SID>JumpOtherBuffer(-1)<CR>
 nnoremap <silent> ]j :call <SID>JumpOtherBuffer(1)<CR>
 
-function s:JumpOtherListedBuffer(dir)
+function! s:JumpOtherListedBuffer(dir)
     call s:Jump(a:dir, 'v:val.bufnr != '.bufnr('%').' && get(get(getbufinfo(v:val.bufnr), 0, {}), "listed")')
 endfunction
 nnoremap <silent> [J :call <SID>JumpOtherListedBuffer(-1)<CR>
