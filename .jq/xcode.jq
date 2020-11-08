@@ -10,3 +10,11 @@ def xcodeproj:
 
 def xcodetarget(target):
   xcodeproj | .targets[] | select(.name == target) | walk(sort? // .);
+
+def set_path:
+  def set_path($id; $path):
+    .objects[$id] as $obj |
+    ($path + "/" + $obj.path) as $path |
+    .objects[$id]._path = $path |
+    reduce $obj.children[]? as $child (.; set_path($child; $path));
+  set_path(.objects[.rootObject].mainGroup; ".");
