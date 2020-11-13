@@ -24,5 +24,5 @@ set wildmode=list:longest,full
 cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
 cabbrev error ^[[:fname:]]\+:\d\+:\d\+: \zserror:
 
-nnoremap <silent> <C-W>O :tabonly<CR>
-nnoremap <silent> <C-W>C :tabclose<CR>
+nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
+nnoremap <silent> <C-W>C :<C-U>execute (v:count ?? '') . 'tabclose'<CR>
