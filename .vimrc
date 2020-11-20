@@ -26,3 +26,7 @@ cabbrev error ^[[:fname:]]\+:\d\+:\d\+: \zserror:
 
 nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
 nnoremap <silent> <C-W>C :<C-U>execute (v:count ?? '') . 'tabclose'<CR>
+
+augroup vimrc | autocmd! | augroup END
+
+autocmd vimrc QuickFixCmdPre * normal mQ
