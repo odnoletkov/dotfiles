@@ -1,2 +1,2 @@
-setlocal makeprg=shellcheck\ --format=gcc\ %
+let b:dispatch = '-compiler=shellcheck -- %'
 setlocal formatprg=shfmt
