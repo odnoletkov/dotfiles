@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+rev=$(git rev-parse "${1?specify rev}")
+
+# convention is .git-blame-ignore-revs
+file=.git/info/blame-ignore-revs
+
+file=$(git config --local --get --default "$file" blame.ignoreRevsFile)
+git config --local blame.ignoreRevsFile "$file"
+
+git config --local blame.markIgnoredLines true
+git config --local blame.markUnblamableLines true
+
+touch "$file"
+
+grep "^\s*$rev" "$file" >/dev/null ||
+	git show --no-patch --format="%H # %s" "$rev" -- >> "$file"
