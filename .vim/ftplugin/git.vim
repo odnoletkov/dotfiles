@@ -13,5 +13,3 @@ nnoremap <silent> <buffer> ]= :call <SID>Jump('+', '')<CR>
 nnoremap <silent> <buffer> ]- :call <SID>Jump('-', '')<CR>
 nnoremap <silent> <buffer> [= :call <SID>Jump('+', 'b')<CR>
 nnoremap <silent> <buffer> [- :call <SID>Jump('-', 'b')<CR>
-
-nnoremap <buffer> czc :Git stash apply --index <C-R>=fnameescape(fugitive#Object(@%))<CR><CR>
