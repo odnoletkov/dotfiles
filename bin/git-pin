@@ -15,7 +15,7 @@ upstream=$(git rev-parse --abbrev-ref @{upstream})
 target=$1
 
 if [[ -z $target && $upstream != "pin" ]]; then
-	target=$(git merge-base head ${upstream-master})
+	target=$(git merge-base HEAD ${upstream-master})
 fi
 
 if [[ -z $target ]]; then

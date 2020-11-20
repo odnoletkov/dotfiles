@@ -2,13 +2,13 @@
 set -e
 
 merge=${1-HEAD}
-merge=$(git rev-list --max-parents=2 --min-parents=2 $merge^!)
+merge=$(git rev-list --max-parents=2 --min-parents=2 $merge^! --)
 merge=${merge:?Target merge commit should have two parents}
 
 base=$(git merge-base $merge^1 $merge^2)
 
 function group_by_patch() {
-	local log="git log --patch --no-prefix --ancestry-path $1"
+	local log="git log --patch --no-prefix --ancestry-path $1 --"
 	join -1 2 -2 2 <($log | git patch-id) <($log -R | git patch-id) \
 		| awk '{ if ($3 < $2) print $1, $3 $2; else print $1, $2 $3; }' \
 		| sort -k 2 -s \
