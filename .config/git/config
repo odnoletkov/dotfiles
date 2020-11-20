@@ -32,3 +32,5 @@
 	recurseSubmodules = check
 [pull]
 	ff = only
+[log]
+	follow = true
