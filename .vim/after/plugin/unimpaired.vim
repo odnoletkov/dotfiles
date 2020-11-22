@@ -13,6 +13,13 @@ nnoremap <silent> yoe :let [&conceallevel, &concealcursor] = get({'0':[2,''],'2'
 nnoremap [gq :<C-U>execute v:count . 'colder'<CR>
 nnoremap ]gq :<C-U>execute v:count . 'cnewer'<CR>
 
+command! Cdelete
+      \ let s:list = getqflist({'all':1})
+      \ | unlet s:list.items[s:list.idx - 1]
+      \ | call setqflist([], 'r', s:list)
+      \ | cc
+nnoremap <silent> dq :Cdelete<CR>
+
 nnoremap ]c ]c:call <SID>RevealHunk()<CR>
 nnoremap [c [c:call <SID>RevealHunk()<CR>
 
