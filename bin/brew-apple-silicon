@@ -1,0 +1,2 @@
+#!/bin/bash
+brew list --formulae | jq -nRr --slurpfile issue <(curl https://api.github.com/repos/Homebrew/brew/issues/7857) 'INDEX($issue[0].body | split("\r\n")[] | select(test("^\\| `")) | split("|")[1:4] | .[] |= split("^ *| *$"; "")[1] | .[0] |= match("`([^`]*)`$").captures[].string; first) as $index | inputs | $index[.] // [., "❓", ""] | join(" ")'
