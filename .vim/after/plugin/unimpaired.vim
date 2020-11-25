@@ -12,6 +12,7 @@ nnoremap <silent> yoe :let [&conceallevel, &concealcursor] = get({'0':[2,''],'2'
 
 nnoremap [gq :<C-U>execute v:count . 'colder'<CR>
 nnoremap ]gq :<C-U>execute v:count . 'cnewer'<CR>
+nnoremap =gq :chistory<CR>
 
 command! Cdelete
       \ let s:list = getqflist({'all':1})
