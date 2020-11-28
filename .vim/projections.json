@@ -16,6 +16,9 @@
       "type": "project",
       "make": "xcodeproj-format %"
     },
+    "*.xcscheme": {
+      "type": "scheme"
+    },
     "*.h": {
       "alternate": "{}.m",
       "type": "header"
