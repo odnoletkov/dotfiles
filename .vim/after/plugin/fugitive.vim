@@ -1,8 +1,3 @@
-autocmd BufNewFile,BufReadPost *
-      \ if mapcheck('<CR>', 'I') ==# "" && &filetype !=# "qf"|
-      \   nnoremap <silent> <buffer> <expr> <CR> v:count && !&readonly ? ':echo<CR>' : ':.Gblame -C10<CR>'|
-      \ endif
-
 nnoremap <silent> <Leader>ge :Gedit<CR>
 nnoremap <silent> <Leader>gv :Gvdiffsplit<CR>
 nnoremap <silent> <Leader>gV :Gvdiffsplit @<CR>
