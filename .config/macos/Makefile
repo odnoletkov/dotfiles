@@ -4,7 +4,7 @@ W=defaults write $@
 
 NSGlobalDomain:
 	$W AppleShowAllExtensions -bool true
-	$W InitialKeyRepeat -int 25
+	$W InitialKeyRepeat -int 15
 	$W KeyRepeat -int 2
 	$W NSAutomaticCapitalizationEnabled -bool false
 	$W NSAutomaticDashSubstitutionEnabled -bool false
