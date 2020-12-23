@@ -14,6 +14,7 @@ set grepprg=grep\ -nsIH
 set history=200
 set hlsearch
 set incsearch
+set mouse=a
 set noswapfile
 set scrolloff=1
 set shellredir=>
