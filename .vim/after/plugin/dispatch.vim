@@ -1,1 +1,4 @@
-let g:dispatch_compilers = { 'xcodebuild-auto': 'xcodebuild' }
+let g:dispatch_compilers = {
+                        \'time': '',
+                        \'xcodebuild-auto': 'xcodebuild'
+                        \}
