@@ -8,11 +8,11 @@
 		<array>
 			<dict>
 				<key>Action</key>
-				<string>focusSelectedNodeAction:</string>
+				<string>focusSelectionAction:</string>
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESceneKitEditor.CmdDefinition.Controls.FocusSelectedNode</string>
+				<string>IDESceneKitEditor.CmdDefinition.Controls.FocusSelection</string>
 				<key>Group</key>
 				<string>Editor Menu for SceneKit Document</string>
 				<key>GroupID</key>
@@ -80,6 +80,8 @@
 			</array>
 			<key>^$K</key>
 			<string>deleteLine:</string>
+			<key>^~f</key>
+			<string>moveWordForward:</string>
 			<key>~f</key>
 			<string>moveWordForward:</string>
 		</dict>
