@@ -8,7 +8,6 @@ set autowrite
 set backspace=indent,eol
 set completefunc=syntaxcomplete#Complete
 set confirm
-set diffopt+=foldcolumn:0
 set formatoptions+=jnr
 set grepprg=grep\ -nsIH
 set history=200
@@ -21,6 +20,12 @@ set shellredir=>
 set shortmess-=S
 set showbreak=+
 set wildmode=list:longest,full
+
+try
+  set diffopt+=foldcolumn:0
+catch
+  set diffopt-=internal diffopt+=foldcolumn:0
+endtry
 
 cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
 
