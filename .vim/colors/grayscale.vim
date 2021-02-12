@@ -6,6 +6,7 @@ hi Title cterm=bold
 
 hi TabLine cterm=none
 hi VertSplit cterm=none
+hi Folded ctermbg=254
 
 hi diffAdded ctermfg=2
 hi diffRemoved ctermfg=1
