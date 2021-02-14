@@ -76,14 +76,19 @@
 		<dict>
 			<key></key>
 			<array>
+				<string>deleteToMark:</string>
 				<string>moveForwardAndModifySelection:</string>
 			</array>
 			<key>^$K</key>
 			<string>deleteLine:</string>
+			<key>^w</key>
+			<string>deleteWordBackward:</string>
 			<key>^~f</key>
 			<string>moveWordForward:</string>
 			<key>~f</key>
 			<string>moveWordForward:</string>
+			<key>~</key>
+			<string>deleteWordBackward:</string>
 		</dict>
 		<key>Version</key>
 		<integer>3</integer>
