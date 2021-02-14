@@ -15,6 +15,7 @@ fi
 
 if [[ $* != *-destination* ]]; then
 	args+=(-destination "generic/platform=iOS Simulator")
+	args+=(CODE_SIGNING_ALLOWED=NO)
 fi
 
 xcodebuild "${args[@]}"
