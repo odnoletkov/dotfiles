@@ -1,2 +1,0 @@
-#!/bin/sh
-exec vim -c "0Git! $*"
