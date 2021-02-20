@@ -1,7 +1,0 @@
-#!/bin/bash
-export GIT_PAGER=
-cmd="git $*"
-git submodule foreach "$cmd" ||
-	exit 1
-echo Entering superproject
-path="." sha1="$(git rev-parse HEAD)" toplevel="$(pwd)" bash -c "$cmd"
