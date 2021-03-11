@@ -22,11 +22,7 @@ set shortmess-=S
 set showbreak=+
 set wildmode=list:longest,full
 
-cabbrev url [[:alnum:]]\+:\/\/[[:fname:]?&*!']\+
+cabbrev url [[:alnum:]]\+:\/\/[[:alnum:].=#/?&*!'-]\+
 
 nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
 nnoremap <silent> <C-W>C :<C-U>execute (v:count ?? '') . 'tabclose'<CR>
-
-augroup vimrc | autocmd! | augroup END
-
-autocmd vimrc QuickFixCmdPre * normal mQ
