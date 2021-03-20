@@ -11,7 +11,7 @@ set confirm
 set diffopt+=foldcolumn:0
 set formatoptions+=jnr
 set grepprg=grep\ -nsIH
-set history=200
+set history=1000
 set hlsearch
 set incsearch
 set mouse=a
