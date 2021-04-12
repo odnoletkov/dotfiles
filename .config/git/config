@@ -11,8 +11,6 @@
 [difftool]
 	prompt = false
 	trustExitCode = true
-[mergetool]
-	keepBackup = false
 [commit]
 	verbose = true
 [rebase]
