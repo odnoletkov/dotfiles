@@ -8,6 +8,8 @@
 	pager = diff-highlight | less
 [merge]
 	tool = vimdiff
+[mergetool]
+	hideResolved = true
 [commit]
 	verbose = true
 [rebase]
