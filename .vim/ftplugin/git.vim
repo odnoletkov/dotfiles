@@ -1,5 +1,3 @@
-setlocal nofoldenable
-
 function! s:Jump(sign, flag)
   let start = line('.')
   if search('^[^' . a:sign . ']', 'cW' . a:flag) &&
