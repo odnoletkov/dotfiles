@@ -20,7 +20,6 @@
 	diffFilter = diff-highlight
 [diff]
 	submodule = log
-	colorMoved = dimmed_zebra
 [diff "swift"]
 	xfuncname = ^\\s*(.*(func \\w|subscript\\(|init\\??\\(|deinit |class \\w|struct \\w|enum \\|protocol \\w|extension \\w).*)$
 [diff "pbxproj"]
