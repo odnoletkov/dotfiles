@@ -4,8 +4,6 @@
 [status]
 	short = true
 	branch = true
-[core]
-	pager = diff-highlight | less
 [merge]
 	tool = vimdiff
 [mergetool]
@@ -17,7 +15,6 @@
 	autoSquash = true
 [interactive]
 	singleKey = true
-	diffFilter = diff-highlight
 [diff]
 	submodule = log
 [diff "swift"]
