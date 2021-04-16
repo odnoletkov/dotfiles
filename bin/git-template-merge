@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+template=${1?missing template directory path}
+gitdir=$(git rev-parse --git-dir)
+
+for file in $(cd "$template" && find ./* -type f)
+do
+	source="$template/$file"
+	target="$gitdir/$file"
+	if [ -e "$target" ]
+	then
+		git merge-file --union "$target" <(echo) "$source"
+	else
+		mkdir -p "$(dirname "$target")"
+		cp "$source" "$target"
+	fi
+done
