@@ -28,9 +28,7 @@
       "type": "source"
     },
     "*.swift": {
-      "type": "source"
-    },
-    "*": {
+      "type": "source",
       "start": ":Dispatch! open -a Xcode .",
       "make": "xcodebuild-auto -quiet"
     }
@@ -45,7 +43,7 @@
     "Tests/*.swift": {
       "type": "test"
     },
-    "*": {
+    "*.swift": {
       "start": ":Dispatch! open -a Xcode .",
       "make": "swift build",
       "dispatch": "swift test"
