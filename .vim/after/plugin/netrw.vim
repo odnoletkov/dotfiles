@@ -1,6 +1,8 @@
 let g:netrw_http_cmd="curl"
 let g:netrw_http_xcmd="-n -L -o"
 
+nnoremap <silent> gx :call netrw#BrowseX(netrw#GX(),0)<CR>
+
 function! s:OpenSim() abort
     let g:netrw_browsex_viewer = 'sh -c "xcrun simctl openurl booted \"\$0\" && open -a Simulator.app"'
     call netrw#BrowseX(netrw#GX(), 0)
