@@ -31,9 +31,6 @@
 [submodule ".vim/pack/max/start/vim-scriptease"]
 	path = .vim/pack/max/start/vim-scriptease
 	url = https://github.com/tpope/vim-scriptease
-[submodule ".vim/pack/max/start/vim-github-link-opener"]
-	path = .vim/pack/max/start/vim-github-link-opener
-	url = https://github.com/gabebw/vim-github-link-opener
 [submodule ".vim/pack/max/start/vim-dispatch"]
 	path = .vim/pack/max/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
