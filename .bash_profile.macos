@@ -1,5 +1,0 @@
-source $HOME/.bashrc
-
-source /usr/local/etc/bash_completion
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
