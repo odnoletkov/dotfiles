@@ -1,0 +1,4 @@
+*.m diff=objc
+*.mm diff=objc
+*.swift diff=swift
+*.pbxproj diff=pbxproj merge=pbxproj

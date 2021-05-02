@@ -17,10 +17,6 @@
 	singleKey = true
 [diff]
 	submodule = log
-[diff "swift"]
-	xfuncname = ^\\s*(.*(func \\w|subscript\\(|init\\??\\(|deinit |class \\w|struct \\w|enum \\|protocol \\w|extension \\w).*)$
-[diff "pbxproj"]
-	xfuncname = ^\\/\\* Begin \\w+ section \\*\\/$
 [push]
 	recurseSubmodules = check
 [pull]

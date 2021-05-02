@@ -1,6 +1,2 @@
-*.m diff=objc
-*.mm diff=objc
-*.swift diff=swift
-*.pbxproj diff=pbxproj
 *.md diff=markdown
 *.markdown diff=markdown
