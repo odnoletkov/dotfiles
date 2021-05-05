@@ -8,6 +8,7 @@ set autowrite
 set backspace=indent,eol
 set completefunc=syntaxcomplete#Complete
 set confirm
+set dictionary+=/usr/share/dict/words
 set diffopt+=foldcolumn:0
 set formatoptions+=jnr
 set grepprg=grep\ -nsIH
