@@ -23,6 +23,8 @@ set shortmess-=S
 set showbreak=+
 set wildmode=list:longest,full
 
+let &background = get({"Dark\n": 'dark'}, system('defaults read -g AppleInterfaceStyle'), &background)
+
 cabbrev url [[:alnum:]]\+:\/\/[[:alnum:].=#/?&*!'-]\+
 
 nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
