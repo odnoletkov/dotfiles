@@ -1,6 +1,5 @@
 filetype plugin indent on
 syntax on
-colorscheme grayscale
 
 set autoindent
 set autoread
