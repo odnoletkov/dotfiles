@@ -10,7 +10,6 @@ set confirm
 set dictionary+=/usr/share/dict/words
 set diffopt+=foldcolumn:0
 set formatoptions+=jnr
-set grepprg=grep\ -nsIH
 set history=1000
 set hlsearch
 set incsearch
