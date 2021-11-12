@@ -27,5 +27,3 @@ cabbrev url [[:alnum:]]\+:\/\/[[:alnum:].=#/?&*!'-]\+
 
 nnoremap <silent> <C-W>O :<C-U>execute (v:count ?? '') . 'tabonly'<CR>
 nnoremap <silent> <C-W>C :<C-U>execute (v:count ?? '') . 'tabclose'<CR>
-
-nnoremap <silent> <expr> <C-Q> empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen<CR>' : ':cclose<CR>'
