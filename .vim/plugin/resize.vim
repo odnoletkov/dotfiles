@@ -59,5 +59,5 @@ function! s:Resize(type) abort
 endfunction
 
 nnoremap <silent> <C-W>0 :<C-U>set operatorfunc=<SID>Resize<CR>g@
-nnoremap <silent> <C-W>0= :<C-U>call <SID>Resize('%')<CR>
+nnoremap <silent> <C-W>0= :<C-U>call <SID>Resize('%') \| normal zb<CR>
 xnoremap <silent> <C-W>0 :<C-U>call <SID>Resize(visualmode())<CR>
