@@ -1,4 +1,5 @@
 PATH=$HOME/bin:$PATH
+PATH=/opt/homebrew/bin:$PATH
 
 HISTSIZE=10000
 
