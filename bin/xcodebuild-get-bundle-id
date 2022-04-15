@@ -1,0 +1,4 @@
+#!/bin/bash
+set -o pipefail
+xcodebuild -showBuildSettings "$@" |
+	sed -n 's/^    PRODUCT_BUNDLE_IDENTIFIER = \(.*\)$/\1/p'
