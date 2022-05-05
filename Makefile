@@ -1,3 +1,8 @@
+update:
+	git pull --rebase
+	git submodule update --init
+	vim -u NONE -c "helptags ALL" -c q
+
 sync: .git
 	git pull --rebase
 	git -c sequence.editor='printf %s\\n 1m$$ wq | ed' \
