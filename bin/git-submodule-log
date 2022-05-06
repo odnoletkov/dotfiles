@@ -1,0 +1,2 @@
+#!/bin/bash
+git --paginate submodule foreach 'git log '"$*"' $sha1..HEAD'
