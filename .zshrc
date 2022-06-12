@@ -7,3 +7,5 @@ autoload -Uz compinit
 compinit
 
 zstyle ":completion:*:*:make:*" tag-order targets
+
+bindkey "^[[Z" reverse-menu-complete
