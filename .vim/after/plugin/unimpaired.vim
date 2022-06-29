@@ -53,3 +53,7 @@ endfunction
 if &diff && argc() == 4 && !v:vim_did_enter
   autocmd VimEnter * match Error '^[<=>|]\{7}[<=>|]\@!.*$' | normal ]n
 endif
+
+command ColorNext
+        \ let colors = getcompletion('', 'color')
+        \ | execute 'colorscheme ' . get(colors, index(colors, get(g:, 'colors_name', 'default')) + 1, colors[0])
