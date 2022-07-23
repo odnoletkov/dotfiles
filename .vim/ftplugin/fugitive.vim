@@ -1,6 +1,3 @@
-setlocal nowrap
-setlocal cursorline
-
 nnoremap <buffer> <LocalLeader>gd :<C-U>Git diff @{<C-R>=v:count1<CR>}<CR>
 nnoremap <buffer> <LocalLeader>gr :<C-U>Git reset @{<C-R>=v:count1<CR>}<CR>
 
