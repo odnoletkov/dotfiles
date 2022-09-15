@@ -19,9 +19,6 @@
 [submodule ".vim/pack/max/start/vim-sleuth"]
 	path = .vim/pack/max/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule ".vim/pack/max/start/vim-eunuch"]
-	path = .vim/pack/max/start/vim-eunuch
-	url = https://github.com/tpope/vim-eunuch
 [submodule ".vim/pack/max/start/vim-repeat"]
 	path = .vim/pack/max/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
