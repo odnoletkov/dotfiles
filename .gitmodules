@@ -38,9 +38,6 @@
 	path = .vim/pack/max/start/readline.vim
 	url = https://github.com/ryvnf/readline.vim
 	branch = main
-[submodule ".vim/pack/max/start/vim-obsession"]
-	path = .vim/pack/max/start/vim-obsession
-	url = https://github.com/tpope/vim-obsession
 [submodule ".vim/pack/max/start/vim-jq"]
 	path = .vim/pack/max/start/vim-jq
 	url = https://github.com/bfrg/vim-jq
