@@ -1,6 +1,8 @@
 update:
+	git submodule update --remote
+	git submodule update
 	git pull --rebase
-	git submodule update --init
+	git submodule update --init --remote --no-fetch
 	vim -u NONE -c "helptags ALL" -c q
 
 sync: .git
