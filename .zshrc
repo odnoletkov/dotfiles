@@ -1,5 +1,7 @@
 source $HOME/.profile
 
+FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
+
 SAVEHIST=$HISTSIZE
 setopt HIST_IGNORE_DUPS
 
