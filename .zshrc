@@ -1,8 +1,5 @@
 source $HOME/.profile
 
-FPATH=~/projects/zsh-xcode-completions/src:$FPATH
-zstyle ':completion:*:*:*:*:descriptions' format '%F{green}%d%f'
-
 SAVEHIST=$HISTSIZE
 setopt HIST_IGNORE_DUPS
 
