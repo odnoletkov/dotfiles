@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xcrun simctl spawn booted log config --subsystem com.apple.network --category connection --mode level:off
