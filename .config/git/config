@@ -21,5 +21,3 @@
 	recurseSubmodules = check
 [pull]
 	ff = only
-[pager]
-	log = less -j2 --pattern '^commit [[:alnum:]]{40}|^stash@\\{[[:digit:]]+\\}'
