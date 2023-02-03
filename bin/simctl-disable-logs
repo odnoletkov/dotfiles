@@ -1,4 +1,5 @@
 #!/bin/bash
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.network --category connection
+xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.network --category boringssl
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.UIKit --category HardwareKeyboard
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.CoreTelephony
