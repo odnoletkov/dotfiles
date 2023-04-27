@@ -1,5 +1,6 @@
 filetype plugin indent on
 syntax on
+colorscheme lunaperche
 
 set autoindent
 set autoread
