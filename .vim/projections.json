@@ -29,11 +29,8 @@
     },
     "*.swift": {
       "type": "source",
-      "start": "xed .",
+      "start": ":Dispatch! open -a Xcode .",
       "make": "xcodebuild-auto -quiet"
-    },
-    ".git/index": {
-      "start": "xed ."
     }
   },
   "Package.swift": {
