@@ -1,4 +1,6 @@
 update:
+	git diff --exit-code --quiet
+	git diff --cached --exit-code --quiet
 	git submodule update --remote
 	git submodule update
 	git pull --rebase
