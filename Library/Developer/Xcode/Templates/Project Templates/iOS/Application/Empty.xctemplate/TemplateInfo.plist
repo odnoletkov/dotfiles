@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.storoj.dt.unit.emptyUIKitApp</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.applicationBase</string>
+        <string>com.apple.dt.unit.iosBase</string>
+    </array>
+    <key>Concrete</key>
+    <true/>
+    <key>Description</key>
+    <string>An empty UIKit app</string>
+    <key>SortOrder</key>
+    <integer>0</integer>
+
+    <key>NameOfInitialFileForEditor</key>
+    <string>AppDelegate.swift</string>
+
+    <key>Project</key>
+    <dict>
+        <key>SharedSettings</key>
+        <dict>
+            <key>SWIFT_VERSION</key>
+            <string>5.0</string>
+        </dict>
+    </dict>
+
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>TargetIdentifier</key>
+            <string>com.apple.dt.cocoaTouchApplicationTarget</string>
+            <key>SharedSettings</key>
+            <dict>
+                <key>LD_RUNPATH_SEARCH_PATHS</key>
+                <string>$(inherited) @executable_path/Frameworks</string>
+                <key>GENERATE_INFOPLIST_FILE</key>
+                <string>YES</string>
+                <key>INFOPLIST_KEY_UILaunchScreen_Generation</key>
+                <string>YES</string>
+            </dict>
+        </dict>
+    </array>
+
+    <key>Nodes</key>
+    <array>
+        <string>AppDelegate.swift</string>
+    </array>
+
+    <key>Definitions</key>
+    <dict>
+        <key>AppDelegate.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>AppDelegate.swift</string>
+        </dict>
+    </dict>
+
+    <key>Image</key>
+    <dict>
+        <key>SystemSymbolName</key>
+        <string>plus.square.dashed</string>
+    </dict>
+</dict>
+</plist>
