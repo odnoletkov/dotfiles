@@ -16,6 +16,8 @@ nnoremap [gq :<C-U>execute v:count . 'colder \| cc'<CR>
 nnoremap ]gq :<C-U>execute v:count . 'cnewer \| cc'<CR>
 nnoremap =gq :chistory<CR>
 
+nnoremap <LocalLeader>* /<C-R>/\\|\<<C-R><C-W>\><CR>
+
 command! Cdelete
       \ let s:list = getqflist({'all':1})
       \ | unlet s:list.items[s:list.idx - 1]
