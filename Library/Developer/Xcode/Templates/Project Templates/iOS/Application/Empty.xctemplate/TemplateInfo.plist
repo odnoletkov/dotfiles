@@ -28,6 +28,21 @@
             <key>SWIFT_VERSION</key>
             <string>5.0</string>
         </dict>
+        <key>Configurations</key>
+        <dict>
+            <key>Debug</key>
+            <dict>
+                <key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+                <string>DEBUG $(inherited)</string>
+                <key>SWIFT_OPTIMIZATION_LEVEL</key>
+                <string>-Onone</string>
+            </dict>
+            <key>Release</key>
+            <dict>
+                <key>SWIFT_COMPILATION_MODE</key>
+                <string>wholemodule</string>
+            </dict>
+        </dict>
     </dict>
 
     <key>Targets</key>
@@ -43,6 +58,10 @@
                 <string>YES</string>
                 <key>INFOPLIST_KEY_UILaunchScreen_Generation</key>
                 <string>YES</string>
+                <key>INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad</key>
+                <string>UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight</string>
+                <key>INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone</key>
+                <string>UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight</string>
             </dict>
         </dict>
     </array>
