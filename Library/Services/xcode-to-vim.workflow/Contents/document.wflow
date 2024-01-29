@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>492</string>
+	<string>523</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Xcode"	set CurrentDocument to document 1 whose name ends with (get name of front window)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "unset HISTFILE; vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
+					<string>tell application "Xcode_15.0.1"	set AppleScript's text item delimiters to " "	set parts to every text item of (get name of front window)	set AppleScript's text item delimiters to (the last text item of parts)	set CurrentDocument to document 1 whose name ends with (item -1 of parts)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "unset HISTFILE; vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>272.500000:368.000000</string>
+				<string>289.000000:683.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -137,7 +137,7 @@ end run</string>
 		<key>presentationMode</key>
 		<integer>11</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceApplicationBundleID</key>
 		<string>com.apple.dt.Xcode</string>
 		<key>serviceApplicationPath</key>
@@ -147,11 +147,11 @@ end run</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSTouchBarShare</string>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
