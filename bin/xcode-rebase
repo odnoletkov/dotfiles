@@ -1,0 +1,76 @@
+#!/bin/bash
+set -e
+
+basename=$(basename "$0")
+
+# [ ] Report which step failed
+trap \
+  'osascript -e "display notification \"Error: $?\" with title \"$basename\" sound name \"Blow\""' \
+  ERR
+
+# echo "$basename: Check can rebase..."
+# # [ ] Respect rebase.autostash
+# # [ ] Preserve reflog
+# git rebase --quiet --keep-base origin/master
+
+# echo "$basename: Check can fetch..."
+# git ls-remote --exit-code origin master >/dev/null
+
+echo "$basename: Close project..."
+# [ ] Don't open Xcode if closed
+osascript - "$PWD" <<EOF
+on run argv
+  set projectDirectory to item 1 of argv
+  tell application id "com.apple.dt.Xcode"
+    repeat with workspaceDocument in workspace documents
+      set AppleScript's text item delimiters to "/"
+      set workspaceDirectory to text 1 thru text item -2 of (path of workspaceDocument as text)
+      if workspaceDirectory = projectDirectory then
+        close workspaceDocument
+        exit repeat
+      end if
+    end repeat
+  end tell
+end run
+EOF
+
+echo "$basename: Pull and rebase..."
+# [x] Fail early for rebase
+# [x] Respect rebase.autostash
+# [ ] Support detached HEAD
+git pull --rebase
+
+echo "$basename: Update submodules..."
+git submodule update --init --recursive
+
+echo "$basename: Clean and build in Xcode..."
+# [x] Use current scheme and destination
+# [ ] Open Xcode in background
+# [ ] Error when Xcode is closed: `127:136: syntax error: Expected end of line but found plural class name. (-2741)`
+osascript - "$PWD" <<EOF
+on run argv
+  set projectDirectory to item 1 of argv
+  tell application id "com.apple.dt.Xcode"
+    open projectDirectory
+    repeat with workspaceDocument in workspace documents
+      set AppleScript's text item delimiters to "/"
+      set workspaceDirectory to text 1 thru text item -2 of (path of workspaceDocument as text)
+      if workspaceDirectory = projectDirectory then
+        repeat while not loaded of workspaceDocument
+          delay 1.0
+        end repeat
+        delay 1.0
+        set actionResult to clean workspaceDocument
+        repeat while not completed of actionResult
+          delay 1.0
+        end repeat
+        delay 1.0
+        set actionResult to build workspaceDocument
+        repeat while not completed of actionResult
+          delay 1.0
+        end repeat
+      end if
+    end repeat
+  end tell
+end run
+EOF
