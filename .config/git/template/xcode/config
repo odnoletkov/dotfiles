@@ -1,4 +1,4 @@
 [diff "swift"]
-	xfuncname = ^\\s*(.*(func \\w|subscript\\(|init\\??\\(|deinit |class \\w|struct \\w|enum \\|protocol \\w|extension \\w).*)$
+	xfuncname = ^[[:space:]]*(.*(func [[:alpha:]]|subscript\\(|init\\??\\(|deinit |class [[:alpha:]]|struct [[:alpha:]]|enum [[:alpha:]]|protocol [[:alpha:]]|extension [[:alpha:]]).*)$
 [diff "pbxproj"]
-	xfuncname = ^\\/\\* Begin \\w+ section \\*\\/$
+	xfuncname = ^/\\* Begin [[:alpha:]]+ section \\*/$
