@@ -1,3 +1,4 @@
+PHONY: update
 update:
 	git rebase --quiet HEAD
 	git submodule update --remote
