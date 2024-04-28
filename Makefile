@@ -4,7 +4,7 @@ update:
 	git pull --rebase
 	git submodule update --init
 	git submodule update --remote --no-fetch
-	vim -u NONE -c "helptags ALL" -c q
+	vim -eu NONE +"helptags ALL" +q
 
 sync: .git
 	git pull --rebase
