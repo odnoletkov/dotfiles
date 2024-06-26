@@ -29,10 +29,8 @@
     },
     "*.swift": {
       "type": "source",
+      "start": ":Dispatch! open -a Xcode .",
       "make": "xcodebuild-auto -quiet"
-    },
-    "*": {
-      "start": "xed ."
     }
   },
   "Package.swift": {
@@ -46,11 +44,9 @@
       "type": "test"
     },
     "*.swift": {
+      "start": ":Dispatch! open -a Xcode .",
       "make": "swift build",
       "dispatch": "swift test"
-    },
-    "*": {
-      "start": "xed ."
     }
   }
 }
