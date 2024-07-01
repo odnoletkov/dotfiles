@@ -1,0 +1,2 @@
+#!/bin/bash
+xcrun simctl listapps "${1-booted}" | plutil -convert json - -o - | jq -r '.["com.apple.DocumentsApp"].GroupContainers.["group.com.apple.FileProvider.LocalStorage"]'
