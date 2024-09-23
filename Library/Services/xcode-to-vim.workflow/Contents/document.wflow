@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Xcode_15.0.1"	set AppleScript's text item delimiters to " "	set parts to every text item of (get name of front window)	set AppleScript's text item delimiters to (the last text item of parts)	set CurrentDocument to document 1 whose name ends with (item -1 of parts)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "unset HISTFILE; vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
+					<string>tell application "Xcode"	set AppleScript's text item delimiters to " "	set parts to every text item of (get name of front window)	set AppleScript's text item delimiters to (the last text item of parts)	set CurrentDocument to document 1 whose name ends with (item -1 of parts)	set FilePath to path of CurrentDocument	set {cstart, _} to the selected character range in CurrentDocument		tell application "Terminal"		do script "unset HISTFILE; vim +" &amp; cstart &amp; "go " &amp; FilePath &amp; " ; exit"		activate	end tellend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>289.000000:683.000000</string>
+				<string>309.000000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
