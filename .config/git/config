@@ -6,8 +6,6 @@
 	branch = true
 [merge]
 	tool = vimdiff
-[mergetool]
-	hideResolved = true
 [commit]
 	verbose = true
 [rebase]
