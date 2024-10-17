@@ -3,3 +3,5 @@ xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.netw
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.network --category boringssl
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.UIKit --category HardwareKeyboard
 xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.CoreTelephony
+xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.Accessibility --category AXAppAccessibility
+xcrun simctl spawn booted log config --mode level:off --subsystem com.apple.coreaudio --category AMCP
