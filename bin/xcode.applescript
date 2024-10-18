@@ -1,8 +1,7 @@
-#!/bin/bash
-osascript - "$PWD" "${1?missing action}" "${2}" <<EOF
+#!/usr/bin/osascript
 on run argv
-  set projectDirectory to item 1 of argv
-  set action to item 2 of argv
+  set projectDirectory to do shell script "pwd"
+  set action to item 1 of argv
   tell application id "com.apple.dt.Xcode"
     open projectDirectory
     repeat with workspaceDocument in workspace documents
@@ -13,7 +12,7 @@ on run argv
           delay 1.0
         end repeat
         if action = "select-scheme" then
-          set targetSchemeName to item 3 of argv
+          set targetSchemeName to item 2 of argv
           set schemeToUse to scheme targetSchemeName of workspaceDocument
           set active scheme of workspaceDocument to schemeToUse
 	else if action = "close" then
@@ -36,4 +35,3 @@ on run argv
     end repeat
   end tell
 end run
-EOF
