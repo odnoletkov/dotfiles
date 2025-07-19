@@ -47,15 +47,3 @@
 [submodule ".vim/pack/max/start/vim-projectionist"]
 	path = .vim/pack/max/start/vim-projectionist
 	url = https://github.com/tpope/vim-projectionist
-[submodule ".vim/pack/clojure/start/vim-fireplace"]
-	path = .vim/pack/clojure/start/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace
-[submodule ".vim/pack/clojure/start/vim-salve"]
-	path = .vim/pack/clojure/start/vim-salve
-	url = https://github.com/tpope/vim-salve
-[submodule ".vim/pack/clojure/start/vim-sexp"]
-	path = .vim/pack/clojure/start/vim-sexp
-	url = https://github.com/guns/vim-sexp
-[submodule ".vim/pack/clojure/start/vim-sexp-mappings-for-regular-people"]
-	path = .vim/pack/clojure/start/vim-sexp-mappings-for-regular-people
-	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
